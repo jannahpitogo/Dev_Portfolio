@@ -12,8 +12,7 @@
   "dependencies": {
     "@tanstack/react-router": "^1.170.18",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "terminal.css": "^0.7.5"
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

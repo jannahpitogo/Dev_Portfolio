@@ -1,4 +1,5 @@
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
+import "../index.css";
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -15,14 +16,14 @@ function RootComponent() {
 
           <div className="nav-links">
             <Link to="/" hash="#about">
-              About
+              ABOUT
             </Link>
             <Link to="/" hash="#stack">
-              Stack
+              STACK
             </Link>
-            <Link to="/all-works">Work</Link>
-            <Link to="/creative">Creative</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/all-works">WORK</Link>
+            <Link to="/creative">CREATIVE</Link>
+            <Link to="/contact">CONTACT</Link>
           </div>
         </header>
       </nav>

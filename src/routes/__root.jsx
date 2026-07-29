@@ -21,7 +21,9 @@ function RootComponent() {
             <Link to="/" hash="stack">
               STACK
             </Link>
-            <Link to="/all-works">WORK</Link>
+            <Link to="/" hash="work">
+              WORK
+            </Link>
             <Link to="/creative">CREATIVE</Link>
             <Link to="/contact">CONTACT</Link>
           </div>

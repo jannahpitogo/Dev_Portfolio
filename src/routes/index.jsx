@@ -1,9 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import jannahImg from "../assets/jannah.png";
-import expressImg from "../assets/express.webp";
-import githubImg from "../assets/github.jpg";
-import premieredentImg from "../assets/premieredent.webp";
 import StackIcon from "tech-stack-icons";
 import projects from "../data/projects.json";
 
@@ -43,7 +39,11 @@ function Home() {
       </section>
 
       <section id="about" className="about">
-        <img className="about-img filter" src={jannahImg} alt="Jannah Pitogo" />
+        <img
+          className="about-img filter"
+          src="./src/assets/jannah.png"
+          alt="Jannah Pitogo"
+        />
 
         <span className="about-content">
           <h2 className="about-text">About Me</h2>
@@ -112,7 +112,11 @@ function Home() {
             <p>Node.js</p>
           </span>
           <span>
-            <img src={expressImg} alt="Express.js" className="stack-icon" />
+            <img
+              src="./src/assets/express.webp"
+              alt="Express.js"
+              className="stack-icon"
+            />
             <p>Express.js</p>
           </span>
           <span>
@@ -124,7 +128,11 @@ function Home() {
             <p>Git</p>
           </span>
           <span>
-            <img src={githubImg} alt="GitHub" className="stack-icon" />
+            <img
+              src="./src/assets/github.jpg"
+              alt="GitHub"
+              className="stack-icon"
+            />
             <p>GitHub</p>
           </span>
           <span>
@@ -147,24 +155,28 @@ function Home() {
               className="project"
               key={`${project.project_title}-${project.project_date}`}
             >
-              <img
-                src={index === 0 ? premieredentImg : project.background}
-                alt={project.title}
-                className="project-img"
-              />
+              <Link to={project.demo} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={
+                    index === 0
+                      ? "./src/assets/premieredent.jpg"
+                      : project.background
+                  }
+                  alt={project.title}
+                  className="project-img"
+                />
+              </Link>
               <div className="project-content">
-                <h3 className="work-project-title">{project.title}</h3>
-                <p className="work-project-description">
-                  {project.description}
-                </p>
-                <a
+                <h3 className="work-project-title">{project.project_title}</h3>
+                <p>{project.description}</p>
+                <Link
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="work-project-link"
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </div>
           ))}

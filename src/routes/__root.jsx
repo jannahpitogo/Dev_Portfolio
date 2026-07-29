@@ -15,10 +15,10 @@ function RootComponent() {
           </div>
 
           <div className="nav-links">
-            <Link to="/" hash="#about">
+            <Link to="/" hash="about">
               ABOUT
             </Link>
-            <Link to="/" hash="#stack">
+            <Link to="/" hash="stack">
               STACK
             </Link>
             <Link to="/all-works">WORK</Link>

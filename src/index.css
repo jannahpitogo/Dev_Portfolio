@@ -147,7 +147,7 @@ code {
 }
 
 .about-img {
-  width: 25%;
+  width: 23%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -243,4 +243,13 @@ p {
   color: var(--color-accent);
   font-family: var(--font-sans);
   font-size: 1rem;
+}
+
+.work-project-title {
+  font-style: bold;
+  font-family: var(--font-serif);
+}
+
+.work-project-description {
+  font-family: var(--font-sans);
 }

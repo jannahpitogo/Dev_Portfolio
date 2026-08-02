@@ -147,7 +147,7 @@ function Home() {
       </section>
 
       <section id="work" className="work">
-        <h2 className="work-text">Work</h2>
+        <h2 className="work-text">Selected Works</h2>
 
         <div className="work-projects">
           {projects.map((project, index) => (
@@ -155,7 +155,7 @@ function Home() {
               className="project"
               key={`${project.project_title}-${project.project_date}`}
             >
-              <Link to={project.demo} target="_blank" rel="noopener noreferrer">
+              <a href={project.demo} target="_blank" rel="noopener noreferrer">
                 <img
                   src={
                     index === 0
@@ -165,18 +165,21 @@ function Home() {
                   alt={project.title}
                   className="project-img"
                 />
-              </Link>
+              </a>
+
               <div className="project-content">
                 <h3 className="work-project-title">{project.project_title}</h3>
-                <p>{project.description}</p>
-                <Link
+                <p className="work-project-description">
+                  {project.description}
+                </p>
+                <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="work-project-link"
                 >
                   View Project
-                </Link>
+                </a>
               </div>
             </div>
           ))}

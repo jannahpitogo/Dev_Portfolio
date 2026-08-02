@@ -4,7 +4,7 @@
     "alt": "Premieredent.com",
     "expertise": "Web Development",
     "project_date": 2025,
-    "project_title": "Premiere Dent Dental Clinic",
+    "project_title": "PREMIERE DENT DENTAL CLINIC",
     "description": "A Dental Clinic start-up in the Philippines, a landing page website built using HTML, CSS, JavaScript, and Tailwind CSS. Deployed using Cloudflare Pages and backend server using Node.js and Cloudflare pages.",
     "tools": ["HTML", "CSS", "JS", "Tailwind CSS"],
     "demo": "https://premieredent.com/",

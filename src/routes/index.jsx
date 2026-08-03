@@ -110,7 +110,7 @@ function Home() {
           </span>
           <span>
             <img
-              src="./src/assets/express.webp"
+              src="images/express.webp"
               alt="Express.js"
               className="stack-icon"
             />
@@ -125,11 +125,7 @@ function Home() {
             <p>Git</p>
           </span>
           <span>
-            <img
-              src="./src/assets/github.jpg"
-              alt="GitHub"
-              className="stack-icon"
-            />
+            <img src="images/github.jpg" alt="GitHub" className="stack-icon" />
             <p>GitHub</p>
           </span>
           <span>

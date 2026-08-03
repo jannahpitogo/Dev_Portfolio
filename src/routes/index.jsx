@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import StackIcon from "tech-stack-icons";
 import projects from "../data/projects.json";
+import jannah from "../assets/jannah.png";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -39,11 +40,7 @@ function Home() {
       </section>
 
       <section id="about" className="about">
-        <img
-          className="about-img filter"
-          src="./src/assets/jannah.png"
-          alt="Jannah Pitogo"
-        />
+        <img className="about-img filter" src={jannah} alt="Jannah Pitogo" />
 
         <span className="about-content">
           <h2 className="about-text">About Me</h2>
@@ -159,7 +156,7 @@ function Home() {
                 <img
                   src={
                     index === 0
-                      ? "./src/assets/premieredent.jpg"
+                      ? "./public/images/premieredent.jpg"
                       : project.background
                   }
                   alt={project.title}

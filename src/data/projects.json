@@ -1,6 +1,6 @@
 [
   {
-    "background": "../assets/premieredent.jpg",
+    "background": "./public/images/premieredent.jpg",
     "alt": "Premieredent.com",
     "expertise": "Web Development",
     "project_date": 2025,
@@ -12,7 +12,7 @@
     "category": "development"
   },
   {
-    "background": "../src/assets/VA_portfolio.png",
+    "background": "./public/images/VA_portfolio.png",
     "alt": "JannahPitogo.com/VA_Portfolio",
     "expertise": "Web Development",
     "project_date": 2026,
@@ -24,7 +24,7 @@
     "category": "development"
   },
   {
-    "background": "../src/assets/investIQ.png",
+    "background": "./public/images/investIQ.png",
     "alt": "InvestIQ logo",
     "expertise": "Web Development",
     "project_date": 2026,
@@ -36,7 +36,7 @@
     "category": "development"
   },
   {
-    "background": "../src/assets/beyond-the-stars.webp",
+    "background": "./public/images/beyond-the-stars.webp",
     "alt": "Beyond The Stars",
     "expertise": "Game Development",
     "project_date": 2024,

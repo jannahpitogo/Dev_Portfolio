@@ -45,37 +45,34 @@ function Home() {
         <span className="about-content">
           <h2 className="about-text">About Me</h2>
           <p>
-            I’m a digital professional with experience combining technical
-            development and creative design to deliver effective digital
-            solutions. I’ve worked with clients in the Philippines as well as
-            remotely with clients in Singapore and the United States, helping
-            create responsive websites and strong visual branding.
+            Hi! I'm Jannah, a Junior Full-Stack Web Developer based in
+            Barcelona.
           </p>
           <p>
-            My expertise includes: Web Development: Developing responsive sites
-            using HTML, CSS, and JavaScript, with a focus on deployment and site
-            security (Cloudflare).
+            I love creating things. Whether it's learning a new instrument,
+            writing in my journal, building an application, or developing a
+            game, I enjoy turning ideas into something real. Music and
+            programming have a lot in common to me, both require curiosity,
+            patience, and a willingness to keep learning. The more I learn, the
+            more I realize there's always more to discover, and that's what
+            keeps me excited.
           </p>
           <p>
-            Creative Design: Professional video editing, 3D modeling, and brand
-            asset creation using Adobe Creative Suite (Premiere Pro,
-            Illustrator, Photoshop) and Blender.
-          </p>
-
-          <p>
-            Digital Strategy: Streamlining business operations through marketing
-            automation, social media management, and SEO-optimized profiles.
+            I enjoy and challenge myself by building applications that solve
+            everyday problems, especially the ones I experience myself. If I
+            find a better way to do something, I'll probably try to build it.
+            Journaling has also shaped how I approach challenges by helping me
+            organize my thoughts and break problems into smaller pieces.
           </p>
           <p>
-            Administrative: Managing complex data workflows, CRM updates, and
-            real estate project coordination to ensure seamless business
-            delivery. I enjoy learning how technology works and helping others
-            understand it more clearly. I’m naturally curious and enjoy
-            exploring problems that I don't understand. One of the things I
-            value most when working with others is clear communication and
-            collaboration. I also value the freedom in communication where
-            everyone can share their ideas without barriers. Let’s connect:
-            pitogojannah@outlook.com
+            Above all, I'm someone who loves learning and challenging myself.
+            Whether it's picking up a new technology, a new instrument, or
+            building something I've never built before, I enjoy stepping outside
+            my comfort zone. I believe the best developers aren't the ones who
+            know everything—especially when information is everywhere, but the
+            ones who stay curious, keep building, keep learning, and never stop
+            improving. Because you only fail when you stop trying, and I don't
+            plan on stopping anytime soon.
           </p>
         </span>
       </section>

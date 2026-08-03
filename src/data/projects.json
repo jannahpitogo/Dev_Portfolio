@@ -4,7 +4,7 @@
     "alt": "Premieredent.com",
     "expertise": "Web Development",
     "project_date": 2025,
-    "project_title": "PREMIERE DENT DENTAL CLINIC",
+    "project_title": "Premiere Dent Dental Clinic",
     "description": "A Dental Clinic start-up in the Philippines, a landing page website built using HTML, CSS, JavaScript, and Tailwind CSS. Deployed using Cloudflare Pages and backend server using Node.js and Cloudflare pages.",
     "tools": ["HTML", "CSS", "JS", "Tailwind CSS"],
     "demo": "https://premieredent.com/",
@@ -12,57 +12,39 @@
     "category": "development"
   },
   {
-    "background": "assets/ProjectsImage/JannahVA.webp",
+    "background": "../src/assets/VA_portfolio.png",
     "alt": "JannahPitogo.com/VA_Portfolio",
     "expertise": "Web Development",
     "project_date": 2026,
     "project_title": "VA Portfolio",
-    "description": "A personal portfolio website built using HTML, CSS, and Javascript. Deployed using Cloudflare Pages. It serves as a platform to showcase my skills, projects, and experiences as a Virtual Assistant and Web Developer. It has a front-end focus, and a simple backend using cloudflare pages handling email API.",
+    "description": "A personal portfolio website built with HTML, CSS, and JavaScript. Deployed on Cloudflare Pages with a serverless backend that uses an Email API to handle contact form submissions. Showcases my skills, projects, and experience as a Virtual Assistant and Web Developer",
     "tools": ["HTML", "CSS", "JS"],
-    "demo": "https://jannahpitogo.com/VA_Portfolio/",
+    "demo": "https://jannahpitogo.com/VA_Portfolio",
     "code": "https://github.com/JannahPitogo/VA_Portfolio",
     "category": "development"
   },
   {
-    "background": "assets/ProjectsImage/beyond-the-stars.webp",
+    "background": "../src/assets/investIQ.png",
+    "alt": "InvestIQ logo",
+    "expertise": "Web Development",
+    "project_date": 2026,
+    "project_title": "InvestIQ",
+    "description": "InvestIQ is a full-stack investment portfolio analysis platform built with React, Node.js, Express.js, PostgreSQL, REST APIs, and Recharts. As part of a four-person Agile team, designed the backend architecture and data flow, implemented the backend functionality, specified the UX design, and conducted backend testing to deliver portfolio analytics and interactive dashboards.",
+    "tools": ["HTML", "CSS", "JS"],
+    "demo": "https://investiq-migracode.netlify.app/",
+    "code": "https://github.com/JannahPitogo/VA_Portfolio",
+    "category": "development"
+  },
+  {
+    "background": "../src/assets/beyond-the-stars.webp",
     "alt": "Beyond The Stars",
     "expertise": "Game Development",
     "project_date": 2024,
     "project_title": "Beyond The Stars",
-    "description": "A personal 2D Platformer Game project made in Unity using C# with custom made graphics made by a colleague. I didn't do the graphics but I programmed the game from the movements and over all the functionality of the game",
+    "description": "A 2D platformer game developed in Unity using C#. Implemented core gameplay mechanics, player movement, game logic, collision handling, and overall functionality, while integrating custom game assets created by a collaborating designer.",
     "tools": ["Adobe Photoshop", "C#", "Unity"],
     "demo": "https://youtu.be/wRoPdtlLy4s",
     "code": "https://github.com/jannahpitogo/Beyond_The_Stars",
     "category": "development"
-  },
-  {
-    "background": "assets/ProjectsImage/premieredent-facebook.webp",
-    "alt": "Premieredent Facebook Page",
-    "expertise": "Social Media Management",
-    "project_date": 2025,
-    "project_title": "Premiere Dent Dental Clinic",
-    "description": "A Dental Clinic start-up in the Philippines, I managed their Facebook page by creating content and posting regularly to engage with their audience and promote their services. I also handled marketing through facebook ads and their google business profile, ensuring a positive online presence for the clinic.",
-    "tools": [
-      "Canva",
-      "Capcut",
-      "Facebook Ads Manager",
-      "Google Business Profile",
-      "Meta Business Suite"
-    ],
-    "demo": "https://www.facebook.com/profile.php?id=61581399696892",
-    "code": "https://www.facebook.com/profile.php?id=61581399696892",
-    "category": "virtualassistance"
-  },
-  {
-    "background": "assets/ProjectsImage/bcm.webp",
-    "alt": "3D Design Bubble Cutting Machine",
-    "expertise": "3D Modeling | 3D Animation",
-    "project_date": 2024,
-    "project_title": "3D Design Bubble Cutting Machine",
-    "description": "A 3D modeling and animation project for a bubble cutting machine prototype, showcasing the design and functionality of the machine. This is a prototype of a machine from engineering students in the Philippines, I created the 3D model and animation to visualize the machine's operation and design concept.  ",
-    "tools": ["Blender", "Blender Animation", "Adobe Premiere Pro"],
-    "demo": "https://www.behance.net/gallery/249417867/3D-DESIGN-%28Bubble-Cutting-Machine%29",
-    "code": "https://www.behance.net/gallery/249417867/3D-DESIGN-%28Bubble-Cutting-Machine%29",
-    "category": "animation"
   }
 ]

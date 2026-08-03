@@ -163,14 +163,26 @@ function Home() {
                 <p className="work-project-description">
                   {project.description}
                 </p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="work-project-link"
-                >
-                  View Project
-                </a>
+
+                <div>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="work-project-link"
+                  >
+                    View Project
+                  </a>
+
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="work-project-link"
+                  >
+                    Github Repository
+                  </a>
+                </div>
               </div>
             </div>
           ))}

@@ -151,9 +151,7 @@ function Home() {
               <a href={project.demo} target="_blank" rel="noopener noreferrer">
                 <img
                   src={
-                    index === 0
-                      ? "./public/images/premieredent.jpg"
-                      : project.background
+                    index === 0 ? "images/premieredent.jpg" : project.background
                   }
                   alt={project.title}
                   className="project-img"

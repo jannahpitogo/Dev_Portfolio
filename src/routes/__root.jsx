@@ -24,7 +24,9 @@ function RootComponent() {
             <Link to="/" hash="work">
               WORK
             </Link>
-            <Link to="/contact">CONTACT</Link>
+            <Link to="/" hash="contact">
+              CONTACT
+            </Link>
           </div>
         </header>
       </nav>

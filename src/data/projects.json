@@ -7,8 +7,8 @@
     "project_title": "Premiere Dent Dental Clinic",
     "description": "A Dental Clinic start-up in the Philippines, a landing page website built using HTML, CSS, JavaScript, and Tailwind CSS. Deployed using Cloudflare Pages and backend server using Node.js and Cloudflare pages.",
     "tools": ["HTML", "CSS", "JS", "Tailwind CSS"],
-    "demo": "https://premieredent.com/",
-    "code": "premieredent.com",
+    "demo": "https://premieredent.com",
+    "code": "https://premieredent.com",
     "category": "development"
   },
   {
@@ -32,7 +32,7 @@
     "description": "InvestIQ is a full-stack investment portfolio analysis platform built with React, Node.js, Express.js, PostgreSQL, REST APIs, and Recharts. As part of a four-person Agile team, designed the backend architecture and data flow, implemented the backend functionality, specified the UX design, and conducted backend testing to deliver portfolio analytics and interactive dashboards.",
     "tools": ["HTML", "CSS", "JS"],
     "demo": "https://investiq-migracode.netlify.app/",
-    "code": "https://github.com/JannahPitogo/VA_Portfolio",
+    "code": "https://github.com/jannahpitogo/investIQ",
     "category": "development"
   },
   {

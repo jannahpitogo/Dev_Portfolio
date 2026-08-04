@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@tanstack/react-router": "^1.170.18",
+    "gsap": "^3.15.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tech-stack-icons": "^3.7.1"

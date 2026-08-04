@@ -137,8 +137,12 @@ function Home() {
       </section>
 
       <section id="work" className="work">
-        <h2 className="work-text">Selected Works</h2>
-
+        <div className="work-header">
+          <h2 className="work-text">Selected Works</h2>
+          <Link to="/projects" className="work-main_button">
+            Playground {">"}
+          </Link>
+        </div>
         <div className="work-projects">
           {projects.map((project, index) => (
             <div
@@ -161,12 +165,12 @@ function Home() {
                   {project.description}
                 </p>
 
-                <div>
+                <div className="project-button-container">
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="work-project-link"
+                    className="work-project-button"
                   >
                     View Project
                   </a>
@@ -175,7 +179,7 @@ function Home() {
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="work-project-link"
+                    className="work-project-button"
                   >
                     Github Repository
                   </a>

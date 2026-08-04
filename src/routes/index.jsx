@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import StackIcon from "tech-stack-icons";
 import projects from "../data/projects.json";
 import jannah from "../assets/jannah.png";
-import AnnouncementModal from "../components/Modal";
+import AnnouncementModal from "../components/modal.jsx";
 
 export const Route = createFileRoute("/")({
   component: Home,

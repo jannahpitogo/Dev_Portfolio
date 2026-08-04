@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import StackIcon from "tech-stack-icons";
 import projects from "../data/projects.json";
 import jannah from "../assets/jannah.png";
+import AnnouncementModal from "../components/Modal";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -11,6 +12,8 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <main>
+      <AnnouncementModal />
+
       <section className="hero">
         <div className="live-indicator-holder">
           <span className="indicator">

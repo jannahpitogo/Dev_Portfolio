@@ -125,7 +125,7 @@ function Home() {
             <p>Git</p>
           </span>
           <span>
-            <img src="images/github.jpg" alt="GitHub" className="stack-icon" />
+            <img src="images/github.png" alt="GitHub" className="stack-icon" />
             <p>GitHub</p>
           </span>
           <span>

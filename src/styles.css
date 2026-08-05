@@ -62,6 +62,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  height: 60px;
 }
 
 .nav a {
@@ -89,4 +90,17 @@ body {
   font-size: 1rem;
   color: var(--color-accent);
   text-decoration: none;
+}
+
+.link-logo {
+  height: 25px;
+  width: 25px;
+}
+
+.nav-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  height: 15px;
+  align-items: center;
 }

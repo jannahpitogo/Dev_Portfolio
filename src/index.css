@@ -233,11 +233,15 @@ p {
 }
 
 .project-content {
-  width: 80%;
+  width: 82%;
   text-align: center;
-  height: auto;
+  height: 100%;
   font-family: var(--font-mono);
   font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .project Link {
@@ -250,6 +254,9 @@ p {
 .work-project-title {
   font-style: bold;
   font-family: var(--font-serif);
+  font-size: 1.05rem;
+  margin: 15px;
+  color: var(--color-accent);
 }
 
 .work-header {

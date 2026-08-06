@@ -161,9 +161,8 @@ function Home() {
                   className="project-img"
                 />
               </a>
-
+              <h3 className="work-project-title">{project.project_title}</h3>
               <div className="project-content">
-                <h3 className="work-project-title">{project.project_title}</h3>
                 <p className="work-project-description">
                   {project.description}
                 </p>

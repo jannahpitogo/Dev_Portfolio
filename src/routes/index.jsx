@@ -3,7 +3,8 @@ import { Link } from "@tanstack/react-router";
 import StackIcon from "tech-stack-icons";
 import projects from "../data/projects.json";
 import AnnouncementModal from "../components/modal.jsx";
-import About from "./about.jsx";
+import About from "../components/about.jsx";
+import Hero from "../components/hero.jsx";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -13,35 +14,7 @@ function Home() {
   return (
     <main>
       <AnnouncementModal />
-
-      <section className="hero">
-        <div className="live-indicator-holder">
-          <span className="indicator">
-            <div className="circle blink" aria-hidden="true"></div>
-            <Link className="portfolio-main_button" to="/">
-              DEV
-            </Link>
-          </span>
-          <span className="indicator">
-            <Link className="portfolio-main_button" to="/creative">
-              CREATIVE
-            </Link>
-          </span>
-        </div>
-
-        <h1 className="hero-title">Hi! I am Jannah Pitogo</h1>
-        <p>
-          Hi, I'm Jannah — a full-stack web developer who recently ran . Now I'm
-          building modern, accessible web applications and always looking for
-          the next challenge.
-        </p>
-
-        <code>
-          git commit -m "Graduated from a Full-Stack Web Development Bootcamp
-          🎉"
-        </code>
-      </section>
-
+      <Hero />
       <About />
 
       <section id="stack" className="stack">

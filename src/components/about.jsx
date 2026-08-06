@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import jannah from "../assets/jannah.png";
 
 export default function About() {

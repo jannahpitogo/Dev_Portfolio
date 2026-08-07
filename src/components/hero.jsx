@@ -10,11 +10,6 @@ export default function Hero() {
             DEV
           </Link>
         </span>
-        <span className="indicator">
-          <Link className="portfolio-main_button" to="/creative">
-            CREATIVE
-          </Link>
-        </span>
       </div>
 
       <h1 className="hero-title">Hi! I am Jannah Pitogo</h1>
@@ -25,7 +20,7 @@ export default function Hero() {
       </p>
 
       <code>
-        git commit -m "Graduated from a Full-Stack Web Development Bootcamp 🎉"
+        git commit -m "Graduated from a Full-Stack Web Development Bootcamp"
       </code>
     </section>
   );

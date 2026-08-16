@@ -8,49 +8,23 @@ export default function Contact() {
           Have a project in mind or want to discuss potential opportunities?
           Feel free to reach out!
         </p>
+
+      <div>
+          <a href="mailto:pitogojannah@outlook.com" className="flex"><img src="images/email.webp" alt="email icon" className="link-logo"></img>
+          <p>pitogojannah@outlook.com</p>
+          </a>
+
+        
+          <a href="https://www.linkedin.com/in/jannah-pitogo" target="_blank" rel="noopener noreferrer" className="flex"><img src="images/linkedin.webp" alt="linkedIn icon" className="link-logo"></img>
+          <p>Jannah Pitogo</p>
+          </a>
+
+          <a href="https://github.com/jannahpitogo" target="_blank" rel="noopener noreferrer" className="flex align-middle h-1">
+            <img src="images/github.png" alt="github icon" className="link-logo"></img>
+            <p>jannahpitogo</p>
+          </a>
       </div>
-
-      <form
-        className="contact-form"
-        action="https://formspree.io/f/mnqvydqv"
-        method="POST"
-      >
-        <label htmlFor="name" className="label">
-          Name
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          className="label-input"
-          required
-        />
-
-        <label htmlFor="email" className="label">
-          Email
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="label-input"
-          required
-        />
-
-        <label htmlFor="message" className="label">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          className="label-input"
-          required
-        ></textarea>
-
-        <button type="submit" className="contact-button">
-          Send Message
-        </button>
-      </form>
+      </div>
     </section>
   );
 }

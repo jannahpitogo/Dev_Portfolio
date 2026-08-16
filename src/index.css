@@ -157,6 +157,7 @@ code {
 .about-content {
   max-width: 800px;
   text-align: left;
+  text-align: justify;
 }
 
 .about-text,
@@ -209,7 +210,6 @@ p {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
   margin: 0 20px;
 }
 
@@ -301,17 +301,23 @@ p {
 }
 
 .techstack-container {
-  display: flex;
-  flex-direction: row;
-  gap: 0 5px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
 
 }
 
 .tech-button {
   border-radius: 5px;
   padding: 3px 5px;
-  font-size: x-small;
+  font-size: xx-small;
   background-color: #2b2929;
+  text-align: center;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .contact {

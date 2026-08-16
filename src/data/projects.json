@@ -6,7 +6,7 @@
     "project_date": 2025,
     "project_title": "Premiere Dent ",
     "description": "A modern dental clinic landing page built with HTML, CSS, JavaScript, and Tailwind CSS, deployed on Cloudflare Pages with an Email API-powered contact form for seamless client inquiries.",
-    "tools": ["HTML", "CSS", "JS", "Tailwind CSS"],
+    "tools": ["HTML", "JS", "Tailwind CSS"],
     "demo": "https://premieredent.com",
     "code": "https://premieredent.com",
     "category": "development"
@@ -30,7 +30,7 @@
     "project_date": 2026,
     "project_title": "InvestIQ",
     "description": "A full-stack investment portfolio analysis platform built with React, Node.js, Express.js, PostgreSQL, REST APIs, and Recharts. Developed as part of a four-person Agile team, focusing on backend architecture, data flow, functionality, UX design, and testing.",
-    "tools": ["HTML", "CSS", "JS"],
+    "tools": ["ReactJS", "Tailwind CSS", "NodeJS", "Express", "PostgreSQL"],
     "demo": "https://investiq-migracode.netlify.app/",
     "code": "https://github.com/jannahpitogo/investIQ",
     "category": "development"

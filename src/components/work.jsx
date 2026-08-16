@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import projects from "../data/projects.json";
+import StackIcon from "tech-stack-icons";
 
 export default function Work() {
   return (
@@ -25,10 +26,16 @@ export default function Work() {
                 className="project-img"
               />
             </a>
-
-            <div className="project-content">
+                
+            <div className="project-content">  
               <h3 className="work-project-title">{project.project_title}</h3>
               <p className="work-project-description">{project.description}</p>
+              <div className="techstack-container">
+              {project.tools.map((tech) => (
+                <span className="tech-button">{tech}</span>
+              ))}
+              </div>
+              
 
               <div className="project-button-container">
                 <a
@@ -37,7 +44,7 @@ export default function Work() {
                   rel="noopener noreferrer"
                   className="work-project-button"
                 >
-                  View Project
+                  Demo ↗
                 </a>
 
                 <a
@@ -46,7 +53,7 @@ export default function Work() {
                   rel="noopener noreferrer"
                   className="work-project-button"
                 >
-                  Github Repository
+                  View on Github ↗
                 </a>
               </div>
             </div>

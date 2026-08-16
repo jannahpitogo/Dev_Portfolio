@@ -215,8 +215,11 @@ p {
 
 .project-img {
   height: 200px;
-  width: 200px;
+  width: 300px;
   object-fit: cover;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .project {
@@ -233,7 +236,7 @@ p {
 }
 
 .project-content {
-  width: 82%;
+  width: 90%;
   text-align: center;
   height: 100%;
   font-family: var(--font-mono);
@@ -241,7 +244,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 15px;
 }
 
 .project Link {
@@ -255,8 +258,7 @@ p {
   font-style: bold;
   font-family: var(--font-serif);
   font-size: 1.05rem;
-  margin: 15px;
-  color: var(--color-accent);
+  padding: 10px;
 }
 
 .work-header {
@@ -279,6 +281,8 @@ p {
 }
 .work-project-description {
   font-family: var(--font-sans);
+  text-align: justify;
+  font-size:smaller;
 }
 
 .project-button-container {
@@ -296,6 +300,20 @@ p {
   color: var(--color-foreground);
 }
 
+.techstack-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0 5px;
+
+}
+
+.tech-button {
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-size: x-small;
+  background-color: #2b2929;
+}
+
 .contact {
   display: flex;
   text-align: center;
@@ -306,7 +324,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 50%;
+  width: 80%;
   text-align: left;
   border: 1px solid var(--color-border);
   padding: 40px;

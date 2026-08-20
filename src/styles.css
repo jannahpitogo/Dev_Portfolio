@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 100 800;
   font-display: swap;
-  src: url("https://static.figma.com/font/BricolageGrotesque_opsz_wdth_wght__1")
+  src: url("./assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.woff2")
     format("woff2");
 }
 
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
-  src: url("https://static.figma.com/font/Lora_wght__2") format("woff2");
+  src: url("./assets/fonts/Lora-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-style: italic;
   font-weight: 400 700;
   font-display: swap;
-  src: url("https://static.figma.com/font/Lora-Italic_wght__2") format("woff2");
+  src: url("./assets/fonts/Lora-Italic-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
@@ -30,7 +30,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("https://static.figma.com/font/FragmentMono-Regular_1")
+  src: url("./assets/fonts/FragmentMono-Regular.woff2")
     format("woff2");
 }
 

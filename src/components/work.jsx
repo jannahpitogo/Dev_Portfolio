@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import projects from "../data/projects.json";
-import StackIcon from "tech-stack-icons";
 
 export default function Work() {
   return (
@@ -32,7 +31,7 @@ export default function Work() {
               <p className="work-project-description">{project.description}</p>
               <div className="techstack-container">
               {project.tools.map((tech) => (
-                <span className="tech-button">{tech}</span>
+                <span className="tech-button" key={tech}>{tech}</span>
               ))}
               </div>
               

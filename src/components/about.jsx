@@ -3,7 +3,7 @@ import jannah from "../assets/jannah.png";
 export default function About() {
   return (
     <section id="about" className="about">
-      <img className="about-img filter" src={jannah} alt="Jannah Pitogo" />
+      <img className="about-img filter" src={jannah} alt="Jannah Pitogo" width="800" height="1000"/>
 
       <span className="about-content">
         <h2 className="about-text">About Me</h2>

@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router"
+import githubIcon from "../assets/icons/github.png"
 
 export default function Nav(){
     return (
@@ -30,7 +31,7 @@ export default function Nav(){
                         rel="noopener noreferrer"
                     >
                         <img
-                        src="images/github.png"
+                        src={githubIcon}
                         alt="github logo"
                         className="link-logo"
                         />

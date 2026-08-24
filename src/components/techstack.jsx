@@ -1,3 +1,15 @@
+import cssIcon from "../assets/icons/css.png";
+import expressIcon from "../assets/icons/express.webp";
+import gitIcon from "../assets/icons/git.png";
+import githubIcon from "../assets/icons/github.png";
+import htmlIcon from "../assets/icons/html.png";
+import jsIcon from "../assets/icons/js.webp";
+import mysqlIcon from "../assets/icons/mysql.png";
+import nodejsIcon from "../assets/icons/nodejs.webp";
+import pythonIcon from "../assets/icons/python.webp";
+import reactIcon from "../assets/icons/react.webp";
+import tailwindIcon from "../assets/icons/tailwindcss.png";
+
 export default function TechStack() {
   return (
     <section id="stack" className="stack">
@@ -5,36 +17,36 @@ export default function TechStack() {
 
       <div className="stack-icons">
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/html.png" alt="HTML" className="stack-icon" width="50" height="50"/>
+          <img src={htmlIcon} alt="HTML" className="stack-icon" width="50" height="50"/>
           <p>HTML5</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/css.png" alt="CSS" className="stack-icon" width="50" height="50"/>
+          <img src={cssIcon} alt="CSS" className="stack-icon" width="50" height="50"/>
           <p>CSS3</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/js.webp" alt="javaScript" className="stack-icon" width="50" height="50"/>
+          <img src={jsIcon} alt="javaScript" className="stack-icon" width="50" height="50"/>
           <p>JavaScript</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/react.webp" alt="React" className="stack-icon mb-1.5" width="50" height="50"/>
+          <img src={reactIcon} alt="React" className="stack-icon mb-1.5" width="50" height="50"/>
           <p>React</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/nodejs.webp" alt="NodeJS" className="stack-icon" width="50" height="50"/>
+          <img src={nodejsIcon} alt="NodeJS" className="stack-icon" width="50" height="50"/>
           <p>Node.js</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/tailwindcss.png" alt="TailwindCSS" className="stack-icon" width="70" height="70"/>
+          <img src={tailwindIcon} alt="TailwindCSS" className="stack-icon" width="70" height="70"/>
           <p>Tailwind</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/git.png" alt="Git" className="stack-icon" width="50" height="50"/>
+          <img src={gitIcon} alt="Git" className="stack-icon" width="50" height="50"/>
           <p>Git</p>
         </span>
         <span className="tech-icon-container">
           <img
-            src="./src/assets/icons/express.webp"
+            src={expressIcon}
             alt="Express.js"
             className="stack-icon"
             width="50"
@@ -43,15 +55,15 @@ export default function TechStack() {
           <p>Express</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/github.png" alt="GitHub" className="stack-icon" width="50" height="50"/>
+          <img src={githubIcon} alt="GitHub" className="stack-icon" width="50" height="50"/>
           <p>GitHub</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/mysql.png" alt="MySQL" className="stack-icon" width="50" height="50"/>
+          <img src={mysqlIcon} alt="MySQL" className="stack-icon" width="50" height="50"/>
           <p>MySQL</p>
         </span>
         <span className="tech-icon-container">
-          <img src="./src/assets/icons/python.webp" alt="Python" className="stack-icon" width="50" height="50"/>
+          <img src={pythonIcon} alt="Python" className="stack-icon" width="50" height="50"/>
           <p>Python</p>
         </span>
       </div>

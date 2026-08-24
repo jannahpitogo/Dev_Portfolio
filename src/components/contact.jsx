@@ -1,3 +1,5 @@
+import githubIcon from "../assets/icons/github.png"
+
 export default function Contact() {
   return (
     <section id="contact" className="contact">
@@ -20,7 +22,7 @@ export default function Contact() {
           </a>
 
           <a href="https://github.com/jannahpitogo" target="_blank" rel="noopener noreferrer" className="flex align-middle h-1">
-            <img src="images/github.png" alt="github icon" className="link-logo"></img>
+            <img src={githubIcon} alt="github icon" className="link-logo"></img>
             <p>jannahpitogo</p>
           </a>
       </div>

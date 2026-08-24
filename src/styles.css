@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 @font-face {
   font-family: "Bricolage Grotesque";
@@ -55,14 +55,15 @@ body {
 
 .nav {
   padding: 10px 50px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-border);
   font-family: var(--font-sans);
   color: var(--color-accent);
   text-decoration: none;
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
 }
 
 .nav a {
@@ -75,7 +76,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
-  border-bottom: 1px solid var(--border);
 }
 
 .nav-links {
@@ -93,8 +93,8 @@ body {
 }
 
 .link-logo {
-  height: 25px;
   width: 25px;
+  height: 25px;
 }
 
 .nav-socials {
@@ -103,4 +103,42 @@ body {
   gap: 5px;
   height: 15px;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 18px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 0.7rem;
+  }
+
+  .nav-socials {
+    gap: 3px;
+  }
+
+  .link-logo {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+#about,
+#stack,
+#work,
+#contact {
+  scroll-margin-top: 90px;
 }

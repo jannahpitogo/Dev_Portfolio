@@ -14,7 +14,8 @@
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
-  src: url("./assets/fonts/Lora-VariableFont_wght.woff2") format("woff2");
+  src: url("./assets/fonts/Lora-VariableFont_wght.woff2")
+    format("woff2");
 }
 
 @font-face {
@@ -22,7 +23,8 @@
   font-style: italic;
   font-weight: 400 700;
   font-display: swap;
-  src: url("./assets/fonts/Lora-Italic-VariableFont_wght.woff2") format("woff2");
+  src: url("./assets/fonts/Lora-Italic-VariableFont_wght.woff2")
+    format("woff2");
 }
 
 @font-face {
@@ -38,26 +40,62 @@
   --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
   --font-serif: "Lora", Georgia, serif;
   --font-mono: "Fragment Mono", "JetBrains Mono", monospace;
-  --color-background: #0a0a0a;
-  --color-foreground: #e8e4de;
-  --color-card: #111111;
-  --color-muted: #1c1c1c;
-  --color-muted-foreground: #5a5550;
-  --color-accent: #c8b89a;
-  --color-border: #222018;
+
+  /* Warm Ivory + Terracotta */
+  --color-background: #F7F3EE;
+  --color-foreground: #242321;
+  --color-card: #FFFDF9;
+  --color-muted: #EDE7DF;
+  --color-muted-foreground: #6F6A63;
+  --color-accent: #C76B4A;
+  --color-accent-hover: #A95438;
+  --color-border: #E5DED5;
+}
+
+.dark {
+  /* Deep Charcoal + Terracotta */
+  --color-background: #211E1B;
+  --color-foreground: #F7F3EE;
+  --color-card: #2A2622;
+  --color-muted: #35302B;
+  --color-muted-foreground: #B8AEA3;
+  --color-accent: #D98260;
+  --color-accent-hover: #E39575;
+  --color-border: #403A34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: var(--color-background);
+  background-color: var(--color-background);
   color: var(--color-foreground);
+  font-family: var(--font-sans);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-/* live button */
+a {
+  color: var(--color-accent);
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
 .circle {
   width: 10px;
   height: 10px;
-  background: white;
+  background-color: var(--color-accent);
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
@@ -70,12 +108,12 @@ body {
 }
 
 .live-indicator-holder .indicator {
-  font-family: sans-serif;
-  color: #fff;
+  font-family: var(--font-sans);
+  color: var(--color-foreground);
   padding: 6px 7px;
   border-radius: 6px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .live-indicator-holder .indicator .blink {
@@ -92,13 +130,15 @@ body {
   }
 }
 
-/* live button */
-
 .portfolio-main_button {
   text-decoration: none;
   color: var(--color-accent);
   font-family: var(--font-sans);
   font-size: 1rem;
+}
+
+.portfolio-main_button:hover {
+  color: var(--color-foreground);
 }
 
 .menu-selection {
@@ -178,9 +218,10 @@ p {
 .about-content-screen {
   max-width: 100vh;
   text-align: left;
-  background-color: var(--color-foreground);
+  background-color: var(--color-card);
   padding: 20px;
   border-radius: 8px;
+  border: 1px solid var(--color-border);
 }
 
 @media (max-width: 768px) {
@@ -272,8 +313,8 @@ p {
 }
 
 .project {
-  background: #0d0d0d;
-  border: 1px solid #1f1f1f;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -282,13 +323,26 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  transition:
+    transform 0.25s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.06);
+}
+
+.project-wrapper {
+  height: 100%;
 }
 
 .project-content {
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   text-align: center;
-  height: 100%;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   display: flex;
@@ -297,7 +351,7 @@ p {
   padding: 15px;
 }
 
-.project Link {
+.project a {
   text-decoration: none;
   color: var(--color-accent);
   font-family: var(--font-sans);
@@ -305,7 +359,7 @@ p {
 }
 
 .work-project-title {
-  font-style: bold;
+  font-weight: 700;
   font-family: var(--font-serif);
   font-size: 1.05rem;
   padding: 10px;
@@ -329,10 +383,11 @@ p {
   text-decoration: underline;
   color: var(--color-foreground);
 }
+
 .work-project-description {
   font-family: var(--font-sans);
   text-align: justify;
-  font-size:smaller;
+  font-size: smaller;
 }
 
 .project-button-container {
@@ -340,6 +395,7 @@ p {
   gap: 10px;
   margin-top: 10px;
 }
+
 .work-project-button {
   text-decoration: none;
   color: var(--color-accent);
@@ -354,20 +410,20 @@ p {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-
 }
 
 .tech-button {
   border-radius: 5px;
   padding: 3px 5px;
   font-size: xx-small;
-  background-color: #2b2929;
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
   text-align: center;
   display: flex;
-  height: 30px;
   align-items: center;
   justify-content: center;
-
+  height: 30px;
+  border: 1px solid var(--color-border);
 }
 
 .contact {
@@ -389,6 +445,7 @@ p {
   .contact {
     padding: 60px 24px;
     gap: 30px;
+    flex-direction: column;
   }
 
   .contact-header {
@@ -414,6 +471,20 @@ p {
   border-radius: 8px;
   color: var(--color-foreground);
   height: 40px;
+  padding: 8px 10px;
+  outline: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.label-input:focus {
+  border-color: var(--color-accent);
+}
+
+.label-input::placeholder {
+  color: var(--color-muted-foreground);
 }
 
 .contact-button {
@@ -422,4 +493,17 @@ p {
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-button:hover {
+  opacity: 0.85;
+}
+
+.contact-button:active {
+  transform: scale(0.97);
 }

@@ -1,32 +1,109 @@
-import githubIcon from "../assets/icons/github.png"
+import { motion } from "motion/react";
+import githubIcon from "../assets/icons/github.png";
 
 export default function Contact() {
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      x: -40,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <section id="contact" className="contact">
-      <div className="contact-header">
-        <span>GET IN TOUCH</span>
-        <h2>Let's Work Together!</h2>
-        <p>
+      <motion.div
+        className="contact-header"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          once: true,
+          amount: 0.2,
+        }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.12,
+            },
+          },
+        }}
+      >
+        <motion.span variants={itemVariants}>
+          GET IN TOUCH
+        </motion.span>
+
+        <motion.h2 variants={itemVariants}>
+          Let's Work Together!
+        </motion.h2>
+
+        <motion.p variants={itemVariants}>
           Have a project in mind or want to discuss potential opportunities?
           Feel free to reach out!
-        </p>
+        </motion.p>
 
-      <div>
-          <a href="mailto:pitogojannah@outlook.com" className="flex"><img src="images/email.webp" alt="email icon" className="link-logo"></img>
-          <p>pitogojannah@outlook.com</p>
-          </a>
+        <motion.div
+          className="contact-links"
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.1,
+              },
+            },
+          }}
+        >
+          <motion.a
+            href="mailto:pitogojannah@outlook.com"
+            className="flex contact-link"
+            variants={itemVariants}
+          >
+            <img
+              src="images/email.webp"
+              alt="Email icon"
+              className="link-logo"
+            />
+            <p>pitogojannah@outlook.com</p>
+          </motion.a>
 
-        
-          <a href="https://www.linkedin.com/in/jannah-pitogo" target="_blank" rel="noopener noreferrer" className="flex"><img src="images/linkedin.webp" alt="linkedIn icon" className="link-logo"></img>
-          <p>Jannah Pitogo</p>
-          </a>
+          <motion.a
+            href="https://www.linkedin.com/in/jannah-pitogo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex contact-link"
+            variants={itemVariants}
+          >
+            <img
+              src="images/linkedin.webp"
+              alt="LinkedIn icon"
+              className="link-logo"
+            />
+            <p>Jannah Pitogo</p>
+          </motion.a>
 
-          <a href="https://github.com/jannahpitogo" target="_blank" rel="noopener noreferrer" className="flex align-middle h-1">
-            <img src={githubIcon} alt="github icon" className="link-logo"></img>
+          <motion.a
+            href="https://github.com/jannahpitogo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex contact-link"
+            variants={itemVariants}
+          >
+            <img
+              src={githubIcon}
+              alt="GitHub icon"
+              className="link-logo"
+            />
             <p>jannahpitogo</p>
-          </a>
-      </div>
-      </div>
+          </motion.a>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

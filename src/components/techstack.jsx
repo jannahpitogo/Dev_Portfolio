@@ -9,42 +9,145 @@ import nodejsIcon from "../assets/icons/nodejs.webp";
 import pythonIcon from "../assets/icons/python.webp";
 import reactIcon from "../assets/icons/react.webp";
 import tailwindIcon from "../assets/icons/tailwindcss.png";
+import { motion } from "motion/react";
 
 export default function TechStack() {
+  const iconVariants = {
+    hidden: {
+      opacity: 0,
+      y: -80,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 10,
+      },
+    },
+  };
+
   return (
     <section id="stack" className="stack">
       <h2 className="stack-text">Tech Stack</h2>
 
-      <div className="stack-icons">
-        <span className="tech-icon-container">
-          <img src={htmlIcon} alt="HTML" className="stack-icon" width="50" height="50"/>
+      <motion.div
+        className="stack-icons"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
+      >
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={htmlIcon}
+            alt="HTML"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>HTML5</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={cssIcon} alt="CSS" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={cssIcon}
+            alt="CSS"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>CSS3</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={jsIcon} alt="javaScript" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={jsIcon}
+            alt="JavaScript"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>JavaScript</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={reactIcon} alt="React" className="stack-icon mb-1.5" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={reactIcon}
+            alt="React"
+            className="stack-icon mb-1.5"
+            width="50"
+            height="50"
+          />
           <p>React</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={nodejsIcon} alt="NodeJS" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={nodejsIcon}
+            alt="NodeJS"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>Node.js</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={tailwindIcon} alt="TailwindCSS" className="stack-icon" width="70" height="70"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={tailwindIcon}
+            alt="TailwindCSS"
+            className="stack-icon"
+            width="70"
+            height="70"
+          />
           <p>Tailwind</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={gitIcon} alt="Git" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={gitIcon}
+            alt="Git"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>Git</p>
-        </span>
-        <span className="tech-icon-container">
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
           <img
             src={expressIcon}
             alt="Express.js"
@@ -53,20 +156,50 @@ export default function TechStack() {
             height="50"
           />
           <p>Express</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={githubIcon} alt="GitHub" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={githubIcon}
+            alt="GitHub"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>GitHub</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={mysqlIcon} alt="MySQL" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={mysqlIcon}
+            alt="MySQL"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>MySQL</p>
-        </span>
-        <span className="tech-icon-container">
-          <img src={pythonIcon} alt="Python" className="stack-icon" width="50" height="50"/>
+        </motion.span>
+
+        <motion.span
+          className="tech-icon-container"
+          variants={iconVariants}
+        >
+          <img
+            src={pythonIcon}
+            alt="Python"
+            className="stack-icon"
+            width="50"
+            height="50"
+          />
           <p>Python</p>
-        </span>
-      </div>
+        </motion.span>
+      </motion.div>
     </section>
   );
 }

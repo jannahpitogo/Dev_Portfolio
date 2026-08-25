@@ -512,3 +512,8 @@ footer a:hover{
   text-decoration: underline;
   color: var(--color-foreground);
 }
+
+#contact a:hover{
+  text-decoration: underline;
+  color: var(--color-foreground);
+}

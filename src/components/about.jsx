@@ -38,31 +38,24 @@ export default function About() {
         </p>
 
         <p>
-          I love creating things. Whether it's learning a new instrument,
-          writing in my journal, building an application, or developing a game,
-          I enjoy turning ideas into something real. Music and programming have
-          a lot in common to me, both require curiosity, patience, and a
-          willingness to keep learning. The more I learn, the more I realize
-          there's always more to discover, and that's what keeps me excited.
+         My background has always been a mix of creativity and technology, with 2+ years of combined 
+         experience across creative and web development. I partially studied Entertainment and Multimedia 
+         Computing with a focus on Game Development in the Philippines, where I worked with Unity 
+         and C# projects.
         </p>
 
         <p>
-          I enjoy and challenge myself by building applications that solve
-          everyday problems, especially the ones I experience myself. If I find
-          a better way to do something, I'll probably try to build it.
-          Journaling has also shaped how I approach challenges by helping me
-          organize my thoughts and break problems into smaller pieces.
+          I’ve since worked across different creative field and digital roles, including virtual assistance, 
+          real estate support, designing, video editing, and social media management. Alongside this, I spent 
+          the last few years exploring web development through personal and freelance projects, gradually
+          becoming more interested in building the things behind the designs.
         </p>
 
         <p>
-          Above all, I'm someone who loves learning and challenging myself.
-          Whether it's picking up a new technology, a new instrument, or
-          building something I've never built before, I enjoy stepping outside
-          my comfort zone. I believe the best developers aren't the ones who
-          know everything—especially when information is everywhere, but the
-          ones who stay curious, keep building, keep learning, and never stop
-          improving. Because you only fail when you stop trying, and I don't
-          plan on stopping anytime soon.
+          That path eventually brought me to Barcelona, where I completed a 9-month web development 
+          bootcamp in Migracode Barcelona and worked on some full-stack projects with a great team. 
+          Today, I enjoy combining my creative background with development to build digital experiences that I think will 
+          be useful to people.
         </p>
       </motion.span>
 

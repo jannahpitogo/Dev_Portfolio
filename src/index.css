@@ -507,3 +507,8 @@ p {
 .contact-button:active {
   transform: scale(0.97);
 }
+
+footer a:hover{
+  text-decoration: underline;
+  color: var(--color-foreground);
+}

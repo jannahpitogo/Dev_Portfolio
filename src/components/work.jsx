@@ -64,7 +64,7 @@ export default function Work() {
                 <img
                   src={
                     index === 0
-                      ? "images/premieredent.jpg"
+                      ? "images/premieredent.png"
                       : project.background
                   }
                   alt={project.project_title}

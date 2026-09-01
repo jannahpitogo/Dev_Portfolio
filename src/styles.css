@@ -59,6 +59,10 @@
   align-items: center;
 }
 
+.nav-socials a:hover {
+  transform: scale(1.1);
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;

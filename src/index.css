@@ -28,18 +28,18 @@
 }
 
 @font-face {
-  font-family: "Fragment Mono";
+  font-family: "Google Sans Flex";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./assets/fonts/FragmentMono-Regular.woff2")
+  src: url("./assets/fonts/GoogleSansFlex-VariableFont_wght.woff2")
     format("woff2");
 }
 
 :root {
   --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
   --font-serif: "Lora", Georgia, serif;
-  --font-mono: "Fragment Mono", "JetBrains Mono", monospace;
+  --font-mono: "Google Sans Flex", "JetBrains Mono", monospace;
 
   /* Warm Ivory + Terracotta */
   --color-background: #F7F3EE;
@@ -56,7 +56,7 @@
   /* Deep Charcoal + Terracotta */
   --color-background: #211E1B;
   --color-foreground: #F7F3EE;
-  --color-card: #2A2622;
+  --color-card: #100f0e;
   --color-muted: #35302B;
   --color-muted-foreground: #B8AEA3;
   --color-accent: #D98260;
@@ -283,7 +283,7 @@ p {
 
 .work-projects {
   display: grid;
-  gap: 24px;
+  gap: 15px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: 100%;
   max-width: 1400px;

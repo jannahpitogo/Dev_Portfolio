@@ -1,10 +1,8 @@
 .nav {
   padding: 10px 50px;
-  border-bottom: 1px solid var(--color-border);
   font-family: var(--font-sans);
   color: var(--color-accent);
   text-decoration: none;
-  background-color: var(--color-background);
   position: sticky;
   top: 0;
   z-index: 1000;

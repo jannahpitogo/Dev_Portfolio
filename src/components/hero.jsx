@@ -12,7 +12,16 @@ export default function Hero() {
             DEV
           </Link>
         </span>
+
+        <span className="indicator">
+          <div className="circle blink" aria-hidden="true"></div>
+
+          <Link className="portfolio-main_button" to="/">
+            Creative
+          </Link>
+        </span>
       </div>
+      
 
       <h1 className="hero-title">
        {" "}

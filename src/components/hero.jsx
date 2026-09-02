@@ -28,6 +28,7 @@ export default function Hero({setActiveCategory, activeCategory}) {
           <h1 className="hero-title">
           {" "}
           <motion.span 
+            key={activeCategory}
             style={{display: "inline-block"}}
             initial={{y: -100, opacity: 0}}
             animate={{y: 0, opacity: 1}}
@@ -45,9 +46,27 @@ export default function Hero({setActiveCategory, activeCategory}) {
               digital experiences.</p>
         </div>
       ) : (
-        <h1>Hello</h1>
+        <div className="hero-content">
+          <h1 className="hero-title">
+            {" "}
+            <motion.span
+            key={activeCategory}
+            style={{display: "inline-block"}}
+            initial={{y:-100, opacity: 0}}
+            animate={{y:0, opacity: 1}}
+            transition={{
+              type: "spring",
+              stiffness: 200, 
+              damping: 10,
+            }}>
+              Multimedia Designer
+            </motion.span>
+          </h1>
+          <h2>Hi, I'm Jannah!</h2>
+          <p>Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation, 
+            video editing, and digital media. Combining creative and technical skills to produce high-quality output.</p>
+        </div>
       )}
-      
     </section>
   );
 }

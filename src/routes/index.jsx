@@ -20,8 +20,9 @@ export default function Home() {
       <AnnouncementModal />
       <Hero activeCategory={activeCategory} setActiveCategory={setActiveCategory}
       />
-      <About activeCategory={activeCategory}/>
       <TechStack activeCategory={activeCategory} />
+      <About activeCategory={activeCategory}/>
+      
       <Work activeCategory={activeCategory} />
       <Contact />
     </main>

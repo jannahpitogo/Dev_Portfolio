@@ -32,8 +32,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./assets/fonts/GoogleSansFlex-VariableFont_wght.woff2")
-    format("woff2");
+  src: url("./assets/fonts/GoogleSansFlex-VariableFont_wght.ttf")
+    format("ttf");
 }
 
 :root {
@@ -150,7 +150,7 @@ textarea {
 }
 
 .hero {
-  min-height: calc(106vh - 120px);
+  min-height: calc(110vh - 120px);
   padding: 0 24px 40px;
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@ textarea {
 }
 
 .hero p{
-  width: min(100%, 700px);
+  width: min(100%, 800px);
 }
 
 @media (max-width: 600px) {
@@ -260,6 +260,8 @@ p {
   text-align: center;
   gap: 40px;
   padding: 0 24px 60px;
+  width: 25%;
+  overflow: hidden;
 }
 
 .stack-icon {
@@ -268,12 +270,14 @@ p {
 }
 
 .tech-icon-container {
+  margin-top: 30px;
   height: 70px;
   width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .stack-icons {
@@ -281,6 +285,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  width: max-content;
 }
 
 #work {

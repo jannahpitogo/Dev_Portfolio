@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { div } from "motion/react-client";
+import { Tech } from "./techstack";
 
 export default function Hero({setActiveCategory, activeCategory}) {
   return (
@@ -40,10 +40,10 @@ export default function Hero({setActiveCategory, activeCategory}) {
               Web Developer
             </motion.span>
             </h1>
-            <h2>Hi, I'm Jannah!</h2>
-            <p>Full-Stack Web Developer with a creative side and a strong eye for UI, 
+            <p>Hi, I'm Jannah! Full-Stack Web Developer with a creative side and a strong eye for UI, 
               blending technical skills with visual design to build functional and engaging 
               digital experiences.</p>
+            <Tech></Tech>
         </div>
       ) : (
         <div className="hero-content">
@@ -62,8 +62,7 @@ export default function Hero({setActiveCategory, activeCategory}) {
               Multimedia Designer
             </motion.span>
           </h1>
-          <h2>Hi, I'm Jannah!</h2>
-          <p>Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation, 
+          <p>Hi, I'm Jannah! Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation, 
             video editing, and digital media. Combining creative and technical skills to produce high-quality output.</p>
         </div>
       )}

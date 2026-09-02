@@ -168,9 +168,20 @@ textarea {
   color: var(--color-foreground);
 }
 
-.hero p,
-code {
-  width: min(70%, 700px);
+.hero-content {
+  display: flex; 
+  flex-direction: column;
+  height: min-content;
+  align-items: center;
+}
+
+.hero-content h2{
+  font-size:x-large;
+  margin-bottom: 20px;
+}
+
+.hero p{
+  width: min(100%, 700px);
 }
 
 @media (max-width: 600px) {

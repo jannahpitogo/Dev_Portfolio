@@ -5,19 +5,24 @@ import Hero from "../components/hero.jsx";
 import TechStack from "../components/techstack.jsx";
 import Work from "../components/work.jsx";
 import Contact from "../components/contact.jsx";
+import {useState} from "react";
+
 
 export const Route = createFileRoute("/")({
   component: Home,
 });
 
-function Home() {
+
+export default function Home() {
+  const [activeCategory, setActiveCategory] = useState("dev");
   return (
     <main>
       <AnnouncementModal />
-      <Hero />
-      <About />
-      <TechStack />
-      <Work />
+      <Hero activeCategory={activeCategory} setActiveCategory={setActiveCategory}
+      />
+      <About activeCategory={activeCategory}/>
+      <TechStack activeCategory={activeCategory} />
+      <Work activeCategory={activeCategory} />
       <Contact />
     </main>
   );

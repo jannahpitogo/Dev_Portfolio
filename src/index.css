@@ -196,7 +196,7 @@ textarea {
   filter: grayscale(80%);
 }
 
-#about {
+.about {
   min-height: calc(100vh - 120px);
   display: flex;
   align-items: center;
@@ -251,6 +251,20 @@ p {
     width: 100%;
     max-width: 800px;
   }
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 2fr));
+  gap: 16px; 
+}
+
+.about-stats-card {
+  border-top: 1px solid;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 #stack {

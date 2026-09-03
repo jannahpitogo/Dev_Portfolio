@@ -1,11 +1,15 @@
 import jannah from "../assets/jannah.png";
 import { motion } from "motion/react";
 
-export default function About() {
+export default function About({activeCategory}) {
   return (
-    <section id="about" className="about">
 
-      <motion.img
+    <section id="about">
+      
+      {activeCategory === "dev" ? (
+      <div className="about">
+
+       <motion.img
         className="about-img filter"
         src={jannah}
         alt="Jannah Pitogo"
@@ -17,10 +21,10 @@ export default function About() {
         transition={{
           duration: 0.8,
           ease: "easeOut",
-        }}
-      />
+        }} />
 
-      <motion.span
+        <motion.span
+        key={activeCategory}
         className="about-content"
         initial={{ opacity: 0, x: 80 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -29,8 +33,7 @@ export default function About() {
           duration: 0.8,
           ease: "easeOut",
           delay: 0.15,
-        }}
-      >
+        }}>
         <h2 className="about-text">About Me</h2>
 
         <p>
@@ -58,7 +61,63 @@ export default function About() {
           be useful to people.
         </p>
       </motion.span>
+      </div>
+      ) : (
+    <div className="about">
 
-    </section>
-  );
-}
+      <motion.img
+        className="about-img filter"
+        src={jannah}
+        alt="Jannah Pitogo"
+        width="800"
+        height="1000"
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+        }}
+      />
+
+      <motion.span
+        className="about-content"
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          delay: 0.15,
+        }}>
+        <h2 className="about-text">About Me</h2>
+
+        <p>
+          Hi! I'm Jannah, a Multimedia Designer based in Barcelona.
+        </p>
+
+        <p>
+         My background sits at the intersection of creativity and technology, with experience 
+         across graphic design, video editing, digital content, and interactive media. 
+         I partially studied Entertainment and Multimedia Computing, where I worked and 
+         explored different aspects of digital and interactive design.
+        </p>
+
+        <p>
+         Since then, I’ve worked across different creative and digital roles, including graphic 
+         design, video editing, social media management, real estate support, and virtual assistance. 
+         These experiences helped me develop a versatile approach to creating visual content, 
+         while also teaching me how to design with purpose and adapt to different audiences and projects.
+        </p>
+
+        <p>
+          I later expanded my skills into web development, which gave me a deeper understanding 
+          of how design and technology can work together. Today, I've been combining creative
+          and technology in my campaigns depending on the businesses I'm helping.
+        </p>
+        
+      </motion.span>
+      </div>
+      )}
+      </section>
+)};

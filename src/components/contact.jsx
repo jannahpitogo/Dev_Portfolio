@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import githubIcon from "../assets/icons/github.png";
+import githubIcon from "../assets/icons/tech/github.png";
 
 export default function Contact() {
   const itemVariants = {

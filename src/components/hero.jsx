@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { Tech } from "./techstack";
+import  {Tech, Creative}  from "./techstack";
 
 export default function Hero({setActiveCategory, activeCategory}) {
   return (
@@ -63,7 +63,9 @@ export default function Hero({setActiveCategory, activeCategory}) {
             </motion.span>
           </h1>
           <p>Hi, I'm Jannah! Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation, 
-            video editing, and digital media. Combining creative and technical skills to produce high-quality output.</p>
+            video editing, and digital media. Combining creative and technical skills to produce high-quality output.
+          </p>
+          <Creative></Creative>
         </div>
       )}
     </section>

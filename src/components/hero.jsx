@@ -1,13 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import  {Tech, Creative}  from "./techstack";
+import { circle } from "motion/react-client";
 
 export default function Hero({setActiveCategory, activeCategory}) {
   return (
     <section className="hero">
       <div className="live-indicator-holder">
         <span className="indicator">
-          <div className="circle blink" aria-hidden="true"></div>
+          <div className={activeCategory === "dev" ? "circle blink" : "circle"} aria-hidden="true"></div>
 
           <Link className={`portfolio-main_button ${activeCategory === "dev" ? "active" : ""}`} to="/" onClick={() => setActiveCategory("dev")}>
             DEV
@@ -15,10 +16,10 @@ export default function Hero({setActiveCategory, activeCategory}) {
         </span>
 
         <span className="indicator">
-          <div className="circle blink" aria-hidden="true"></div>
+          <div className={activeCategory === "creative" ? "circle blink" : "circle"} aria-hidden="true"></div>
 
           <Link className={`portfolio-main_button ${activeCategory === "creative" ? "active" : ""}`} to="/" onClick={() => setActiveCategory("creative")}>
-            Creative
+            CREATIVE
           </Link>
         </span>
       </div>

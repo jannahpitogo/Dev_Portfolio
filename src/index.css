@@ -107,7 +107,7 @@ textarea {
   gap: 14px;
 }
 
-.live-indicator-holder .indicator {
+.live-indicator-holder .indicator{
   font-family: var(--font-sans);
   color: var(--color-foreground);
   padding: 6px 7px;

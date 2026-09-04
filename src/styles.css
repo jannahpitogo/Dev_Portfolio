@@ -1,10 +1,8 @@
 .nav {
   padding: 10px 50px;
-  border-bottom: 1px solid var(--color-border);
   font-family: var(--font-sans);
   color: var(--color-accent);
   text-decoration: none;
-  background-color: var(--color-background);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,6 +18,7 @@
   color: var(--color-accent);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: bolder;
 }
 
 .nav-header {
@@ -58,6 +57,10 @@
   gap: 5px;
   height: 15px;
   align-items: center;
+}
+
+.nav-socials a:hover {
+  transform: scale(1.1);
 }
 
 .theme-toggle {

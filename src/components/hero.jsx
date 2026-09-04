@@ -1,44 +1,73 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
+import  {Tech, Creative}  from "./techstack";
 
-export default function Hero() {
+export default function Hero({setActiveCategory, activeCategory}) {
   return (
     <section className="hero">
       <div className="live-indicator-holder">
         <span className="indicator">
           <div className="circle blink" aria-hidden="true"></div>
 
-          <Link className="portfolio-main_button" to="/">
+          <Link className={`portfolio-main_button ${activeCategory === "dev" ? "active" : ""}`} to="/" onClick={() => setActiveCategory("dev")}>
             DEV
           </Link>
         </span>
+
+        <span className="indicator">
+          <div className="circle blink" aria-hidden="true"></div>
+
+          <Link className={`portfolio-main_button ${activeCategory === "creative" ? "active" : ""}`} to="/" onClick={() => setActiveCategory("creative")}>
+            Creative
+          </Link>
+        </span>
       </div>
-
-      <h1 className="hero-title">
-       {" "}
-        <motion.span
-          style={{ display: "inline-block" }}
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 200,
-            damping: 10,
-          }}
-        >
-           Hi! I am Jannah Pitogo
-        </motion.span>
-      </h1>
-
-      <p>
-        Hi, I'm Jannah — a full-stack web developer who recently graduated.
-        Now I'm building modern, accessible web applications and always
-        looking for the next challenge.
-      </p>
-
-      <code>
-        git commit -m "Graduated from a Full-Stack Web Development Bootcamp"
-      </code>
+      
+      {activeCategory === "dev" ? (
+        <div className="hero-content">
+          <h1 className="hero-title">
+          {" "}
+          <motion.span 
+            key={activeCategory}
+            style={{display: "inline-block"}}
+            initial={{y: -100, opacity: 0}}
+            animate={{y: 0, opacity: 1}}
+            transition={{
+              type: "spring",
+              stiffness: 200, 
+              damping: 10,
+            }}>
+              Web Developer
+            </motion.span>
+            </h1>
+            <p>Hi, I'm Jannah! Full-Stack Web Developer with a creative side and a strong eye for UI, 
+              blending technical skills with visual design to build functional and engaging 
+              digital experiences.</p>
+            <Tech></Tech>
+        </div>
+      ) : (
+        <div className="hero-content">
+          <h1 className="hero-title">
+            {" "}
+            <motion.span
+            key={activeCategory}
+            style={{display: "inline-block"}}
+            initial={{y:-100, opacity: 0}}
+            animate={{y:0, opacity: 1}}
+            transition={{
+              type: "spring",
+              stiffness: 200, 
+              damping: 10,
+            }}>
+              Multimedia Designer
+            </motion.span>
+          </h1>
+          <p>Hi, I'm Jannah! Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation, 
+            video editing, and digital media. Combining creative and technical skills to produce high-quality output.
+          </p>
+          <Creative></Creative>
+        </div>
+      )}
     </section>
   );
 }

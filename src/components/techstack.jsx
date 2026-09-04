@@ -50,9 +50,9 @@ export function Tech() {
   <div id="stack">
     <motion.div 
     className="stack-icons"
-      animate={{x: ["0", "-40%"]}}
+      animate={{x: ["0", "-50%"]}}
       transition={{
-        duration: 30, 
+        duration: 70, 
         repeat: Infinity,
         ease: "linear",
       }}

@@ -11,14 +11,14 @@ export default function Nav(){
                 </div>
 
                 <div className="nav-links">
-                    <Link to="/" hash="about">
-                    ABOUT
-                    </Link>
-                    <Link to="/" hash="stack">
-                    STACK
-                    </Link>
                     <Link to="/" hash="work">
                     WORK
+                    </Link>
+                    <Link to="/" hash="stack">
+                    SERVICES
+                    </Link>
+                    <Link to="/" hash="about">
+                    ABOUT
                     </Link>
                     <Link to="/" hash="contact">
                     CONTACT

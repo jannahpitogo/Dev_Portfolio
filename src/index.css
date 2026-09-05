@@ -418,6 +418,8 @@ p {
   font-family: var(--font-sans);
   text-align: justify;
   font-size: smaller;
+  height: 100px;
+  margin-bottom: 5px;
 }
 
 .project-button-container {
@@ -440,6 +442,7 @@ p {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
+  height: 70px;
 }
 
 .tech-button {

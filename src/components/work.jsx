@@ -99,14 +99,19 @@ export default function Work() {
                     Demo ↗
                   </a>
 
-                  <a
+                  <a 
+                  className="work-project-button">
+                    View More ↗
+                  </a>
+
+                  {/* <a
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="work-project-button"
                   >
                     View on Github ↗
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

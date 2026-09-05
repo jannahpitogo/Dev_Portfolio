@@ -11,11 +11,12 @@ export default function Nav(){
                 </div>
 
                 <div className="nav-links">
+                    <Link to="/">HOME</Link>
                     <Link to="/" hash="work">
                     WORK
                     </Link>
-                    <Link to="/" hash="stack">
-                    SERVICES
+                    <Link to="/" hash="">
+                    EXPERIENCE
                     </Link>
                     <Link to="/" hash="about">
                     ABOUT

@@ -43,6 +43,7 @@
 
   /* Warm Ivory + Terracotta */
   --color-background: #F7F3EE;
+  --color-text: #FFFDF9;
   --color-foreground: #242321;
   --color-card: #FFFDF9;
   --color-muted: #EDE7DF;
@@ -50,18 +51,21 @@
   --color-accent: #C76B4A;
   --color-accent-hover: #A95438;
   --color-border: #E5DED5;
+  ---background-color-transparent: rgba(160, 160, 160, 0.4);
 }
 
 .dark {
   /* Deep Charcoal + Terracotta */
   --color-background: #211E1B;
   --color-foreground: #F7F3EE;
+  --color-text: #FFFDF9;
   --color-card: #100f0e;
   --color-muted: #35302B;
   --color-muted-foreground: #B8AEA3;
   --color-accent: #D98260;
   --color-accent-hover: #E39575;
   --color-border: #403A34;
+   ---background-color-transparent: rgba(16, 15, 14, 0.5);
 }
 
 * {
@@ -75,7 +79,7 @@ html {
 body {
   margin: 0;
   background-color: var(--color-background);
-  color: var(--color-foreground);
+  color: var(--color-text);
   font-family: var(--font-sans);
   transition:
     background-color 0.3s ease,
@@ -165,7 +169,7 @@ textarea {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
   margin: 0;
-  color: var(--color-foreground);
+  color: var(--color-text);
 }
 
 .hero-content {
@@ -173,6 +177,7 @@ textarea {
   flex-direction: column;
   height: min-content;
   align-items: center;
+  color: var(--color-text);
 }
 
 .hero-content h2{
@@ -181,7 +186,7 @@ textarea {
 }
 
 .hero p{
-  width: min(100%, 800px);
+  width: min(100%, 810px);
 }
 
 @media (max-width: 600px) {
@@ -343,8 +348,7 @@ p {
 }
 
 .project {
-  background-color: var(--color-card);
-  border: 1px solid var(--color-border);
+  background-color: var(---background-color-transparent);
   border-radius: 16px;
   overflow: hidden;
   position: relative;

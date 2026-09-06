@@ -60,7 +60,7 @@ export function Tech() {
 
       {[...techIcons, ...techIcons, ...techIcons, ...techIcons].map((project, index) => (
         <div className="tech-icon-container" key={`${project.label}-${index}`}>
-          <img className="stack-icon" src={project.src} alt={project.alt} height={project.height} width={project.width}/>
+          <img className="stack-icon" src={project.src} alt={project.alt} />
           <p>{project.label}</p>
         </div>
       ))}
@@ -83,7 +83,7 @@ export function Creative() {
 
       {[...creativeIcons, ...creativeIcons, ...creativeIcons, ...creativeIcons].map((project, index) => (
         <div className="tech-icon-container" key={`${project.label}-${index}`}>
-          <img className="stack-icon" src={project.src} alt={project.alt} height={project.height} width={project.width}></img>
+          <img className="stack-icon" src={project.src} alt={project.alt} ></img>
           <p>{project.label}</p>
         </div>
       ))}

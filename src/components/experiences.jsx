@@ -1,20 +1,28 @@
 
 const workExperienceTech = [
     {
-        title: "Web Developer & Social Media Manager",
-        company: "Premiere Dent Dental Clinic",
-        description: "Built and deployed the clinic's website, managed social media, and created marketing materials.",
-        tools: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Cloudflare", "Canva"],
+        title: "Full Stack Web Developer - Bootcamp",
+        company: "Migracode Barcelona",
+        description: "Completed a 9-month Web Development Bootcamp focused on full-stack development, programming fundamentals, APIs, databases, testing, Git/GitHub, and Agile collaboration. Built web applications through hands-on projects and team-based development.",
+        tools: ["HTML", "CSS", "JavaScript", "REST API", "DOM", "Version Control", "Git/GitHub", "API/Fetch", "Python", "React", "Node.js", "Express", "DevTools", "Testing"],
         year: "2025 - 2026",
-        image: "/images/premieredent.png",
+        image: "/images/migracode.webp",
     },
     {
-        title: "Web Developer",
-        company: "Personal Projects",
-        description: "Designed and developed responsive portfolio experiences for clients and personal projects.",
-        tools: ["React", "JavaScript", "CSS"],
-        year: "2024 - 2025",
-        image: "/images/VA_portfolio.png",
+        title: "Web Developer & Social Media Manager",
+        company: "Premiere Dent Dental Clinic",
+        description: "Developed and maintained the clinic’s website and digital presence while managing social media, marketing assets, automation, customer inquiries, and appointment scheduling.",
+        tools: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Cloudflare", "Canva"],
+        year: "2025 - 2026",
+        image: "/images/premieredent_icon.png",
+    },
+    {
+        title: "Floor Plan Editor & Tech Virtual Assistant",
+        company: "Direct Client | Freelance Campaign",
+        description: "Managed and updated real estate website content, edited and optimized property floor plans, and provided administrative support, preparing over 1,400 floor plans for online publication.",
+        tools: ["Adobe Photoshop", "Wordpress", "Microsoft Excel"],
+        year: "2022",
+        image: "/images/techVA.jpg",
     },
 ];
 
@@ -23,26 +31,34 @@ const workExperienceCreative = [
     {
         title: "Graphics & Video Editor",
         company: "Infobuilder Technologies Inc.",
-        description: "Created visual assets and edited videos for digital campaigns and projects.",
-        tools: ["Premiere Pro", "Illustrator", "Photoshop", "Blender"],
+        description: "Created graphics, visual assets, and video content for company-wide and client projects, managing design work from concept to delivery while meeting deadlines and brand standards.",
+        tools: ["Premiere Pro", "Illustrator", "Photoshop", "Blender", "Google Workspace"],
         year: "2024",
-        image: "/images/investIQ.png",
+        image: "/images/infobuilder.jpeg",
     },
     {
         title: "Monthly Postcard Designer",
         company: "Diamond Law Center LLC",
-        description: "Designed monthly postcards for real estate marketing campaigns.",
-        tools: ["Photoshop", "Illustrator"],
+        description: "Designed monthly marketing postcards and promotional graphics for Diamond Law Center, creating branded visual content aligned with marketing goals and audience engagement.",
+        tools: ["Photoshop", "Canva"],
         year: "2022 - 2023",
-        image: "/images/VA_portfolio.png",
+        image: "/images/diamond.png",
     },
     {
-        title: "Freelance Floor Plan Editor & VA",
-        company: "Real Estate (Freelance)",
-        description: "Edited floor plans, managed WordPress updates, and provided virtual assistance.",
+        title: "Graphic Designer & Virtual Assistant",
+        company: "Direct Client | Freelance Campaign | Jessica Lombardo",
+        description: "Provided virtual assistant support for real estate operations while creating social media graphics, marketing content, and website updates to support brand visibility and day-to-day business needs.",
         tools: ["Photoshop", "WordPress", "Administrative Support"],
-        year: "2021 - 2023",
-        image: "/images/beyond-the-stars.webp",
+        year: "2022",
+        image: "/images/jessica.avif",
+    },
+    {
+        title: "Floor Plan Editor & Tech Virtual Assistant",
+        company: "Direct Client | Freelance Campaign",
+        description: "Managed and updated real estate website content, edited and optimized property floor plans, and provided administrative support, preparing over 1,400 floor plans for online publication.",
+        tools: ["Adobe Photoshop", "Wordpress", "Microsoft Excel"],
+        year: "2022",
+        image: "/images/techVA.jpg",
     },
 ];
 
@@ -74,7 +90,6 @@ export function Experiences({activeCategory}) {
                         </div>
                         <div className="experience-meta">
                             <p>{exp.year}</p>
-                            <button type="button" aria-label={`View details for ${exp.title}`}>&rsaquo;</button>
                         </div>
                     </article>
                 ))}

@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 
 const workExperienceTech = [
     {
@@ -67,18 +69,38 @@ export function Experiences({activeCategory}) {
 
     return (
         <section className="experiences" id="experiences">
-            <div className="experiences-heading">
+            <motion.div
+                    className="experiences-heading"
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{
+                      duration: 0.8,
+                      ease: "easeOut",
+                      delay: 0.15,
+                    }}>
                 <p className="experiences-eyebrow">EXPERIENCES</p>
                 <h2>Where I've <span>Worked</span></h2>
                 <p className="experiences-intro">
                     Different roles, industries, and skills, all part of the same journey to grow, learn, and create.
                 </p>
                 <span className="experiences-rule" aria-hidden="true" />
-            </div>
+            
+            </motion.div>
 
             <div className="experience-list">
                 {experiences.map((exp) => (
-                    <article className="experience-card" key={`${exp.title}-${exp.year}`}>
+                    <motion.article
+                    className="experience-card"
+                    key={`${exp.title}-${exp.year}`}
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{
+                      duration: 0.8,
+                      ease: "easeOut",
+                      delay: 0.15,
+                    }}>
                         <img className="experience-image" src={exp.image} alt="" />
                         <div className="experience-content">
                             <h3>{exp.title}</h3>
@@ -91,7 +113,7 @@ export function Experiences({activeCategory}) {
                         <div className="experience-meta">
                             <p>{exp.year}</p>
                         </div>
-                    </article>
+                    </motion.article>
                 ))}
             </div>
         </section>

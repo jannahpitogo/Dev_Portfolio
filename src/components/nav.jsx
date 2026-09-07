@@ -15,8 +15,8 @@ export default function Nav(){
                     <Link to="/" hash="work">
                     WORK
                     </Link>
-                    <Link to="/" hash="">
-                    EXPERIENCE
+                    <Link to="/" hash="experiences">
+                    EXPERIENCES
                     </Link>
                     <Link to="/" hash="about">
                     ABOUT

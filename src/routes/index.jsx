@@ -4,6 +4,7 @@ import About from "../components/about.jsx";
 import Hero from "../components/hero.jsx";
 import Work from "../components/work.jsx";
 import Contact from "../components/contact.jsx";
+import { Experiences } from "../components/experiences.jsx";
 import {useState} from "react";
 
 
@@ -21,6 +22,7 @@ export default function Home() {
       />
       <Work activeCategory={activeCategory} />
       {/* <TechStack activeCategory={activeCategory} /> */}
+      <Experiences activeCategory={activeCategory}></Experiences>
       <About activeCategory={activeCategory}/>
       
       

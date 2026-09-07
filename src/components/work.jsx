@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import projects from "../data/projects.json";
 
-export default function Work() {
+export default function Work({activeCategory}) {
   const projectVariants = {
     hidden: {
       opacity: 0,
@@ -22,13 +22,21 @@ export default function Work() {
   };
 
   return (
-    <section id="work" className="work">
+    <section id="work">
       <div className="work-header">
-        <h2 className="work-text">Selected Works</h2>
+        <div>
+          <h2 className="work-text">Selected Works</h2>
+          <Link to="/projects" className="work-main_button">
+            Playground {">"}
+          </Link>
+        </div>
 
-        <Link to="/projects" className="work-main_button">
-          Playground {">"}
-        </Link>
+        {activeCategory === "dev" ? (
+          <p>A selection of web projects showcasing my development skills, technical problem-solving, and experience building functional digital experiences.</p>
+        ) : (
+          <p>A collection of creative projects showcasing my work in graphic design, video editing, 3D, and digital content.</p>
+        )}
+        
       </div>
 
       <motion.div

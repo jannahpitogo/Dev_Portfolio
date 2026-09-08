@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import githubIcon from "../assets/icons/tech/github.png";
+import githubIcon from "/images/github.png";
 
 export default function Contact() {
   const itemVariants = {
@@ -68,7 +68,7 @@ export default function Contact() {
             <img
               src="images/email.webp"
               alt="Email icon"
-              className="link-logo"
+              className="link-logo email-logo"
             />
             <p>pitogojannah@outlook.com</p>
           </motion.a>
@@ -81,9 +81,9 @@ export default function Contact() {
             variants={itemVariants}
           >
             <img
-              src="images/linkedin.webp"
+              src="images/linkedin.svg"
               alt="LinkedIn icon"
-              className="link-logo"
+              className="link-logo linkedin-logo"
             />
             <p>Jannah Pitogo</p>
           </motion.a>
@@ -98,7 +98,7 @@ export default function Contact() {
             <img
               src={githubIcon}
               alt="GitHub icon"
-              className="link-logo"
+              className="link-logo gitlogo"
             />
             <p>jannahpitogo</p>
           </motion.a>

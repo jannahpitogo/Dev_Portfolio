@@ -47,8 +47,30 @@
 }
 
 .link-logo {
-  width: 25px;
+  width: 40px;
   height: 25px;
+}
+
+.contact-links .link-logo {
+  flex: 0 0 auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.contact-links .email-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-links .linkedin-logo {
+  width: 40px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.contact-links .gitlogo {
+  width: 40px;
+  height: 40px;
 }
 
 .nav-socials {

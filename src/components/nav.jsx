@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router"
-import github from "/images/github.svg"
+import github from "/images/github.png"
+import linkedinIcon from "/images/linkedin.svg"
 
 export default function Nav(){
     return (
@@ -44,7 +45,7 @@ export default function Nav(){
                         rel="noopener noreferrer"
                     >
                         <img
-                        src="images/linkedin.webp"
+                        src={linkedinIcon}
                         alt="linkedin logo"
                         className="link-logo"
                         />

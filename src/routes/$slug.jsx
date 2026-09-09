@@ -35,10 +35,10 @@ function projectPage() {
             <span className="project-case-study__eyebrow">{project.category}</span>
             <div className="project-case-study__links">
               <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">
-                Live Demo
+                Live Demo ↗
               </a>
               <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">
-                Source
+                Source ↗
               </a>
             </div>
           </div>
@@ -50,6 +50,17 @@ function projectPage() {
         <figure className="project-case-study__hero">
           <img src={project.hero?.image} alt={project.hero?.alt || project.title} />
         </figure>
+
+        <section className="project-case-study__section">
+            <div className="project-case-study__label">Technologies</div>
+            <div className="project-case-study__tags">
+              {project.technologies?.map((tech) => (
+                <span key={tech} className="project-case-study__tag">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </section>
 
         <div className="project-case-study__content">
           <section className="project-case-study__section">
@@ -65,19 +76,6 @@ function projectPage() {
             <div>
               <div className="project-case-study__label">Solution</div>
               <p>{project.solution}</p>
-            </div>
-          </section>
-
-          <section className="project-case-study__section">
-            <div className="project-case-study__label">Project structure</div>
-            <div className="project-case-study__code-block">
-              <span> /Controllers</span>
-              <span>    PostsController.cs</span>
-              <span> /Services</span>
-              <span>    PostsService.cs</span>
-              <span> /Models</span>
-              <span>    Post.cs</span>
-              <span> Program.cs</span>
             </div>
           </section>
 
@@ -102,17 +100,6 @@ function projectPage() {
             <div>
               <div className="project-case-study__label">Challenges</div>
               <p>{project.challenges}</p>
-            </div>
-          </section>
-
-          <section className="project-case-study__section">
-            <div className="project-case-study__label">Technologies</div>
-            <div className="project-case-study__tags">
-              {project.technologies?.map((tech) => (
-                <span key={tech} className="project-case-study__tag">
-                  {tech}
-                </span>
-              ))}
             </div>
           </section>
 

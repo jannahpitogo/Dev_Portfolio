@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "premieredent",
+    "title": "Premiere Dent Dental Clinic",
+    "category": "Web Development",
+    "hero": {
+      "image": "images/premieredent.png",
+      "description": "A clean, trust-focused dental clinic website built to improve visibility, simplify appointment inquiries, and present services clearly.",
+      "alt": "Premiere Dent Dental Clinic homepage"
+    },
+    "overview": "A modern dental clinic landing page built with HTML, CSS, JavaScript, and Tailwind CSS, deployed on Cloudflare Pages with an Email API-powered contact form for seamless client inquiries.",
+    "problem": "The clinic needed a stronger online presence and an easy, professional way for patients to contact them and learn about services.",
+    "solution": "I designed and built a responsive landing page with a polished layout, clear service sections, and a working inquiry form to make the clinic easier to reach online.",
+    "process": [
+      "Mapped the clinic's needs and user journey for new patients.",
+      "Built a clean responsive landing page with a strong visual hierarchy.",
+      "Integrated a contact form flow and deployed the site for public access."
+    ],
+    "technologies": [
+      "HTML",
+      "JavaScript",
+      "Tailwind CSS",
+      "Cloudflare",
+      "Resend API"
+    ],
+    "features": [
+      "Responsive clinic landing page",
+      "Appointment/contact inquiry flow",
+      "Modern dental branding and service layout"
+    ],
+    "challenges": "Balancing professionalism and approachability while keeping the experience clear and conversion-focused on mobile devices.",
+    "outcome": "The clinic now has a modern online presence that is easy to navigate, visually consistent, and geared toward patient conversion."
+  },
+  {
+    "slug": "vaportfolio",
+    "title": "VA Portfolio",
+    "category": "Web Development",
+    "hero": {
+      "image": "images/VA_portfolio.png",
+      "description": "A personal portfolio website showcasing digital services, skills, and project highlights with a clear contact pathway.",
+      "alt": "VA portfolio landing page"
+    },
+    "overview": "A personal portfolio website built with HTML, CSS, and JavaScript, designed to showcase my skills, projects, and experience as a Virtual Assistant and Web Developer.",
+    "problem": "I needed a portfolio that clearly presented my work and services while making it easy for potential clients to reach out.",
+    "solution": "I created a clean personal brand site with structured sections for projects, skills, and contact details, making the digital portfolio easy to navigate.",
+    "process": [
+      "Defined the portfolio structure around service positioning and examples.",
+      "Built the responsive UI and content blocks for skills and projects.",
+      "Added a contact flow for inquiries and final deployment."
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Personal branding showcase",
+      "Project highlights",
+      "Contact and inquiry section"
+    ],
+    "challenges": "Creating a portfolio that felt personal yet professional enough to attract service-based opportunities and freelance work.",
+    "outcome": "The portfolio gives a polished first impression and makes my capabilities easy to understand for potential clients and collaborators."
+  },
+  {
+    "slug": "investiq",
+    "title": "InvestIQ",
+    "category": "Web Development",
+    "hero": {
+      "image": "images/investIQ.png",
+      "description": "A full-stack investment dashboard focused on portfolio insights, analysis, and user-friendly financial data visualization.",
+      "alt": "InvestIQ dashboard interface"
+    },
+    "overview": "A full-stack investment portfolio analysis platform built with React, Node.js, Express.js, PostgreSQL, REST APIs, and Recharts. It was developed as part of a four-person Agile team, focusing on backend architecture, data flow, functionality, UX design, and testing.",
+    "problem": "The project required a scalable way to present investment portfolio information while keeping the interface intuitive for users who needed quick insights.",
+    "solution": "We built a full-stack platform with a dashboard focused on portfolio data, analytical views, and a smoother experience for interacting with financial information.",
+    "process": [
+      "Worked in an Agile team to define the product requirements and data flow.",
+      "Built the frontend and backend structure around portfolio analysis features.",
+      "Implemented testing and refinements to improve reliability and usability."
+    ],
+    "technologies": [
+      "ReactJS",
+      "Tailwind CSS",
+      "NodeJS",
+      "Express",
+      "PostgreSQL"
+    ],
+    "features": [
+      "Investment portfolio dashboard",
+      "Data visualization charts",
+      "Full-stack architecture and API integration"
+    ],
+    "challenges": "Coordinating a multi-person build while keeping architecture, UX, and data flow consistent across the project.",
+    "outcome": "The app resulted in a functional investment analysis product that demonstrates both technical depth and collaborative development work."
+  },
+  {
+    "slug": "beyondthestars",
+    "title": "Beyond The Stars",
+    "category": "Game Development",
+    "hero": {
+      "image": "images/beyond-the-stars.webp",
+      "description": "A 2D platformer game blending gameplay mechanics, level design, and custom art assets into a playable experience.",
+      "alt": "Beyond The Stars gameplay screenshot"
+    },
+    "overview": "A 2D platformer game developed in Unity using C#. It includes core gameplay mechanics, player movement, game logic, collision handling, and overall functionality, with custom assets created by a collaborating designer.",
+    "problem": "The goal was to build a playable 2D platformer with polished movement and basic game systems while collaborating on art assets.",
+    "solution": "I implemented the core mechanics and gameplay loop in Unity, integrating movement, collisions, and design elements to create a complete playable prototype.",
+    "process": [
+      "Defined the gameplay flow and player mechanics.",
+      "Implemented movement, collisions, and game logic in Unity.",
+      "Integrated custom assets and tuned the game for a smoother experience."
+    ],
+    "technologies": [
+      "Unity",
+      "C#"  
+    ],
+    "features": [
+      "2D platformer mechanics",
+      "Custom level and gameplay flow",
+      "Collaborative visual design integration"
+    ],
+    "challenges": "Creating responsive gameplay and polished interactions while working with custom visual assets and limited production time.",
+    "outcome": "The project delivered a playable prototype that showcases both technical implementation and creative collaboration."
+  }
+]

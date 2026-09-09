@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import projects from "../data/projects.json";
+import projects from "../data/projects_tech.json";
 
 export default function Work({activeCategory}) {
   const projectVariants = {
@@ -51,80 +51,74 @@ export default function Work({activeCategory}) {
           hidden: {},
 
           visible: {
-            transition: {
+            transition: {     
               staggerChildren: 0.15,
             },
           },
         }}
       >
-        {projects.map((project, index) => (
-          <motion.div
-            className="project-wrapper"
-            key={`${project.project_title}-${project.project_date}`}
-            variants={projectVariants}
-          >
-            <div className="project">
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={
-                    index === 0
-                      ? "images/premieredent.png"
-                      : project.background
-                  }
-                  alt={project.project_title}
-                  className="project-img"
-                />
-              </a>
+        {projects.map((project, index) => {
+          const title = project.title || project.project_title;
+          const description = project.overview || project.description;
+          const image = project.hero?.image || project.background || "images/premieredent.png";
+          const tools = project.technologies || project.tools || [];
+          const demoLink = project.demo || project.hero?.image || "#";
 
-              <div className="project-content">
-                <h3 className="work-project-title">
-                  {project.project_title}
-                </h3>
+          return (
+            <motion.div
+              className="project-wrapper"
+              key={project.slug || `${title}-${index}`}
+              variants={projectVariants}
+            >
+              <div className="project">
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={image}
+                    alt={project.hero?.alt || title}
+                    className="project-img"
+                  />
+                </a>
 
-                <p className="work-project-description">
-                  {project.description}
-                </p>
+                <div className="project-content">
+                  <h3 className="work-project-title">
+                    {title}
+                  </h3>
 
-                <div className="techstack-container">
-                  {project.tools.map((tech) => (
-                    <span className="tech-button" key={tech}>
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                  <p className="work-project-description">
+                    {description}
+                  </p>
 
-                <div className="project-button-container">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="work-project-button"
-                  >
-                    Demo ↗
-                  </a>
+                  <div className="techstack-container">
+                    {tools.map((tech) => (
+                      <span className="tech-button" key={tech}>
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
 
-                  <a 
-                  className="work-project-button">
-                    View More ↗
-                  </a>
+                  <div className="project-button-container">
+                    <a
+                      href={demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="work-project-button"
+                    >
+                      Demo ↗
+                    </a>
 
-                  {/* <a
-                    href={project.code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="work-project-button"
-                  >
-                    View on Github ↗
-                  </a> */}
+                    <Link to={`/${project.slug || "projects"}`} className="work-project-button">
+                      View More ↗
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          );
+        })}
       </motion.div>
     </section>
   );

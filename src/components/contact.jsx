@@ -66,9 +66,9 @@ export default function Contact() {
             variants={itemVariants}
           >
             <img
-              src="images/email.webp"
+              src="images/email.png"
               alt="Email icon"
-              className="link-logo email-logo"
+              className="link-logo"
             />
             <p>pitogojannah@outlook.com</p>
           </motion.a>
@@ -83,7 +83,7 @@ export default function Contact() {
             <img
               src="images/linkedin.svg"
               alt="LinkedIn icon"
-              className="link-logo linkedin-logo"
+              className="link-logo"
             />
             <p>Jannah Pitogo</p>
           </motion.a>
@@ -98,7 +98,7 @@ export default function Contact() {
             <img
               src={githubIcon}
               alt="GitHub icon"
-              className="link-logo gitlogo"
+              className="link-logo"
             />
             <p>jannahpitogo</p>
           </motion.a>

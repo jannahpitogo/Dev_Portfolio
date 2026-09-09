@@ -1,0 +1,128 @@
+import { createFileRoute } from '@tanstack/react-router'
+import { Link } from '@tanstack/react-router'
+import projectsTech from '../data/projects_tech.json'
+
+export const Route = createFileRoute('/$slug')({
+  component: projectPage,
+})
+
+function projectPage() {
+  const { slug } = Route.useParams()
+  const project = projectsTech.find((item) => item.slug === slug)
+
+  if (!project) {
+    return (
+      <section className="project-case-study project-case-study--empty">
+        <div className="project-case-study__wrap">
+          <Link to="/" className="project-case-study__back">
+            ← Back to home
+          </Link>
+          <p>Project not found.</p>
+        </div>
+      </section>
+    )
+  }
+
+  return (
+    <article className="project-case-study">
+      <div className="project-case-study__wrap">
+        <header className="project-case-study__header">
+          <Link to="/" className="project-case-study__back">
+            ← Back to case studies
+          </Link>
+
+          <div className="project-case-study__meta">
+            <span className="project-case-study__eyebrow">{project.category}</span>
+            <div className="project-case-study__links">
+              <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">
+                Live Demo
+              </a>
+              <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">
+                Source
+              </a>
+            </div>
+          </div>
+
+          <h1 className="project-case-study__title">{project.title}</h1>
+          <p className="project-case-study__lede">{project.hero?.description}</p>
+        </header>
+
+        <figure className="project-case-study__hero">
+          <img src={project.hero?.image} alt={project.hero?.alt || project.title} />
+        </figure>
+
+        <div className="project-case-study__content">
+          <section className="project-case-study__section">
+            <div className="project-case-study__label">Overview</div>
+            <p>{project.overview}</p>
+          </section>
+
+          <section className="project-case-study__section project-case-study__section--split">
+            <div>
+              <div className="project-case-study__label">Problem</div>
+              <p>{project.problem}</p>
+            </div>
+            <div>
+              <div className="project-case-study__label">Solution</div>
+              <p>{project.solution}</p>
+            </div>
+          </section>
+
+          <section className="project-case-study__section">
+            <div className="project-case-study__label">Project structure</div>
+            <div className="project-case-study__code-block">
+              <span> /Controllers</span>
+              <span>    PostsController.cs</span>
+              <span> /Services</span>
+              <span>    PostsService.cs</span>
+              <span> /Models</span>
+              <span>    Post.cs</span>
+              <span> Program.cs</span>
+            </div>
+          </section>
+
+          <section className="project-case-study__section">
+            <div className="project-case-study__label">Process</div>
+            <ol className="project-case-study__list">
+              {project.process?.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ol>
+          </section>
+
+          <section className="project-case-study__section project-case-study__section--split">
+            <div>
+              <div className="project-case-study__label">Features</div>
+              <ul className="project-case-study__list project-case-study__list--bullets">
+                {project.features?.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <div className="project-case-study__label">Challenges</div>
+              <p>{project.challenges}</p>
+            </div>
+          </section>
+
+          <section className="project-case-study__section">
+            <div className="project-case-study__label">Technologies</div>
+            <div className="project-case-study__tags">
+              {project.technologies?.map((tech) => (
+                <span key={tech} className="project-case-study__tag">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          <section className="project-case-study__section">
+            <div className="project-case-study__label">Outcome</div>
+            <p>{project.outcome}</p>
+          </section>
+        </div>
+      </div>
+    </article>
+  )
+}
+

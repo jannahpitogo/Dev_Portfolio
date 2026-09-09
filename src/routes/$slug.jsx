@@ -34,7 +34,7 @@ function projectPage() {
           <div className="project-case-study__meta">
             <span className="project-case-study__eyebrow">{project.category}</span>
             <div className="project-case-study__links">
-              <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">
+              <a href={project.link} target="_blank" rel="noreferrer">
                 Live Demo ↗
               </a>
               <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">

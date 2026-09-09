@@ -1,6 +1,7 @@
 [
   {
     "slug": "premieredent",
+    "link": "https://premieredent.com/",
     "title": "Premiere Dent Dental Clinic",
     "category": "Web Development",
     "hero": {
@@ -33,6 +34,7 @@
   },
   {
     "slug": "vaportfolio",
+    "link": "https://portfoliova.jannahpitogo.com/",
     "title": "VA Portfolio",
     "category": "Web Development",
     "hero": {
@@ -63,6 +65,7 @@
   },
   {
     "slug": "investiq",
+    "link": "https://investiq-migracode.netlify.app/",
     "title": "InvestIQ",
     "category": "Web Development",
     "hero": {
@@ -95,6 +98,7 @@
   },
   {
     "slug": "beyondthestars",
+    "link": "https://youtu.be/wRoPdtlLy4s?si=UAIVkSXAITdG8qAo",
     "title": "Beyond The Stars",
     "category": "Game Development",
     "hero": {

@@ -27,7 +27,7 @@ function projectPage() {
     <article className="project-case-study">
       <div className="project-case-study__wrap">
         <header className="project-case-study__header">
-          <Link to="/" className="project-case-study__back">
+          <Link to="/" hash="work" className="project-case-study__back">
             ← Back to case studies
           </Link>
 
@@ -37,9 +37,11 @@ function projectPage() {
               <a href={project.link} target="_blank" rel="noreferrer">
                 Live Demo ↗
               </a>
-              <a href={project.hero?.image || '#'} target="_blank" rel="noreferrer">
-                Source ↗
-              </a>
+              {project.status === 'public' && project.source ? (
+                <a href={project.source} target="_blank" rel="noreferrer">
+                  Source ↗
+                </a>
+              ) : null}
             </div>
           </div>
 

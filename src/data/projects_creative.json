@@ -1,11 +1,11 @@
 [
   {
-    "id": "lumiere-beauty-studio",
-    "title": "Lumière Beauty Studio",
-    "type": ["Graphic Design", "Branding"],
-    "tools": ["Adobe Illustrator", "Adobe InDesign"],
+    "id": "Premiere Dent Dental Clinic",
+    "title": "Premiere Dent Dental Clinic",
+    "type": ["Graphic Design", "Branding", "Marketing Assets", "Social Media"],
+    "tools": ["Adobe Photoshop", "Canva"],
     "date": "2024",
-    "description": "A soft editorial brand concept for a premium beauty studio, designed to feel elevated, minimal, and personal.",
+    "description": "developed a cohesive visual presence for the clinic through branding, social media content, and digital marketing assets. Created graphics and promotional content that maintained a clean, professional, and approachable brand identity across online platforms",
     "images": [
       "/images/premieredent.png"
     ],

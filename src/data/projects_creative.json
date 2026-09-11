@@ -1,6 +1,6 @@
 [
   {
-    "id": "Premiere Dent Dental Clinic",
+    "id": "Premiere-dent-dental-clinic",
     "title": "Premiere Dent Dental Clinic",
     "type": ["Graphic Design", "Branding", "Marketing Assets", "Social Media"],
     "tools": ["Adobe Photoshop", "Canva"],
@@ -12,14 +12,14 @@
     "videoLinks": []
   },
   {
-    "id": "wellness-social-media-campaign",
-    "title": "Wellness Social Media Campaign",
-    "type": ["Social Media", "Marketing"],
-    "tools": ["Canva", "Adobe Photoshop"],
-    "date": "2024",
-    "description": "A lifestyle-focused campaign designed to promote healthy habits through warm visual storytelling and clean layouts.",
+    "id": "jesus-reigns-ministries",
+    "title": "Jesus Reigns Ministries Social Media Volunteering",
+    "type": ["Social Media", "Marketing", "Marketing Assets", "Poster Design", "Video Editing"],
+    "tools": ["Canva", "Adobe Photoshop", "Adobe Lightroom", "Adobe Premiere Pro", "CapCut"],
+    "date": "2025",
+    "description": "Created social media content, event posters, promotional materials, and edited videos to support the ministry’s events and strengthen its online presence. Developed engaging visuals while maintaining a consistent and recognizable visual identity across digital and event materials.",
     "images": [
-      "/images/hero.png"
+      "./src/assets/creative_projects/jrmbcn.png"
     ],
     "videoLinks": []
   },

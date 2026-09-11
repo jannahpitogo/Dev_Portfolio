@@ -83,12 +83,11 @@ export default function Work({ activeCategory }) {
           <div className="creative-grid">
             {filteredCreativeProjects.map((project, index) => {
               const firstImage = project.images?.[0] || "/images/BubbleMachine.png";
-              const firstType = project.type?.[0] || "Creative";
 
               return (
                 <article
                   key={`${project.id || project.title}-${index}`}
-                  className={`creative-card creative-card--${index % 3}`}
+                  className="creative-card"
                 >
                   <div className="creative-card__media">
                     <img src={firstImage} alt={project.title} className="creative-card__image" />
@@ -99,14 +98,12 @@ export default function Work({ activeCategory }) {
                     ) : null}
                   </div>
 
-                  <div className="creative-card__meta">
-                    <span className="creative-card__type">{firstType}</span>
-                    <button type="button" className="creative-card__arrow" aria-label={`View ${project.title}`}>
-                      ↗
+                  <div className="creative-card__content">
+                    <h3 className="creative-card__title">{project.title}</h3>
+                    <button type="button" className="creative-card__button">
+                      View Project <span aria-hidden="true">→</span>
                     </button>
                   </div>
-
-                  <h3 className="creative-card__title">{project.title}</h3>
                 </article>
               );
             })}

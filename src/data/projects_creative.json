@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lumiere-beauty-studio",
+    "title": "Lumière Beauty Studio",
+    "type": ["Graphic Design", "Branding"],
+    "tools": ["Adobe Illustrator", "Adobe InDesign"],
+    "date": "2024",
+    "description": "A soft editorial brand concept for a premium beauty studio, designed to feel elevated, minimal, and personal.",
+    "images": [
+      "/images/premieredent.png"
+    ],
+    "videoLinks": []
+  },
+  {
+    "id": "wellness-social-media-campaign",
+    "title": "Wellness Social Media Campaign",
+    "type": ["Social Media", "Marketing"],
+    "tools": ["Canva", "Adobe Photoshop"],
+    "date": "2024",
+    "description": "A lifestyle-focused campaign designed to promote healthy habits through warm visual storytelling and clean layouts.",
+    "images": [
+      "/images/hero.png"
+    ],
+    "videoLinks": []
+  },
+  {
+    "id": "event-poster-series",
+    "title": "Event Poster Series",
+    "type": ["Print Design", "Poster Design"],
+    "tools": ["Adobe Illustrator", "Photoshop"],
+    "date": "2024",
+    "description": "A print campaign built around calm color, structured typography, and contemporary editorial composition.",
+    "images": [
+      "/images/investIQ.png"
+    ],
+    "videoLinks": []
+  },
+  {
+    "id": "moments-travel-film",
+    "title": "Moments (Travel Film)",
+    "type": ["Video Editing"],
+    "tools": ["Premiere Pro", "DaVinci Resolve"],
+    "date": "2024",
+    "description": "A cinematic travel edit using subtle motion, soft transitions, and reflective storytelling to create a calm mood.",
+    "images": [
+      "/images/jessica.avif"
+    ],
+    "videoLinks": ["https://youtu.be/example-1"]
+  },
+  {
+    "id": "3d-character-render",
+    "title": "3D Character Render",
+    "type": ["3D Design", "Animation"],
+    "tools": ["Blender", "Cinema 4D"],
+    "date": "2024",
+    "description": "A stylized 3D character render with warm lighting and soft composition to emphasize personality and mood.",
+    "images": [
+      "/images/VA_portfolio.png"
+    ],
+    "videoLinks": []
+  },
+  {
+    "id": "real-estate-marketing-materials",
+    "title": "Real Estate Marketing Materials",
+    "type": ["Marketing Assets", "Print Design"],
+    "tools": ["Adobe InDesign", "Photoshop"],
+    "date": "2024",
+    "description": "A branded property marketing set mixing minimal layouts, polished imagery, and clean design for modern real-estate storytelling.",
+    "images": [
+      "/images/infobuilder.jpeg"
+    ],
+    "videoLinks": []
+  }
+]

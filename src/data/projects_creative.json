@@ -1,23 +1,75 @@
 [
   {
-    "id": "Premiere-dent-dental-clinic",
+    "id": "premiere-dent-dental-clinic",
+    "slug": "premiere-dent-dental-clinic",
     "title": "Premiere Dent Dental Clinic",
+    "category": "Creative",
     "type": ["Graphic Design", "Branding", "Marketing Assets", "Social Media"],
     "tools": ["Adobe Photoshop", "Canva"],
     "date": "2024",
-    "description": "developed a cohesive visual presence for the clinic through branding, social media content, and digital marketing assets. Created graphics and promotional content that maintained a clean, professional, and approachable brand identity across online platforms",
+    "description": "Developed a cohesive visual presence for the clinic through branding, social media content, and digital marketing assets. Created graphics and promotional content that maintained a clean, professional, and approachable brand identity across online platforms.",
+    "overview": "This project focused on strengthening Premiere Dent Dental Clinic's visual identity with a clean, welcoming brand system tailored for digital marketing and social outreach.",
+    "problem": "The clinic needed a more polished and consistent set of visuals to help patients recognize the brand and trust the practice online.",
+    "solution": "I designed a unified visual language through branded graphics, marketing assets, and digital content that matched the clinic's professional and approachable tone.",
+    "process": [
+      "Reviewed the clinic's existing brand voice and target audience.",
+      "Created a clean visual system with consistent layouts and color use.",
+      "Produced social content and promotional materials for digital campaigns.",
+      "Refined the final assets for readability, consistency, and brand clarity."
+    ],
+    "features": [
+      "Professional social media graphics",
+      "Brand-aligned marketing assets",
+      "Consistent visual identity across materials"
+    ],
+    "challenges": "This required balancing a medical brand with a warm, friendly tone while keeping the overall design straightforward and trustworthy.",
+    "outcome": "The client received a more cohesive visual presence that improved the consistency of their digital communications and made the brand easier to recognize.",
+    "link": "https://example.com/premiere-dent",
+    "source": "https://example.com/premiere-dent-source",
+    "status": "public",
+    "hero": {
+      "image": "images/projects/premieredent_web.png",
+      "alt": "Premiere Dent Dental Clinic branding and social media design",
+      "description": "A polished digital design system for a dental clinic with a clean, reassuring aesthetic and strong visual clarity."
+    },
     "images": [
       "images/projects/premieredent_web.png"
     ],
     "videoLinks": []
   },
   {
-    "id": "jesus-reigns-ministries",
+    "id": "jesus-reigns-ministries-social-media-volunteering",
+    "slug": "jesus-reigns-ministries-social-media-volunteering",
     "title": "Jesus Reigns Ministries Social Media Volunteering",
+    "category": "Creative",
     "type": ["Social Media", "Marketing", "Marketing Assets", "Poster Design", "Video Editing"],
     "tools": ["Canva", "Adobe Photoshop", "Adobe Lightroom", "Adobe Premiere Pro", "CapCut"],
     "date": "2025",
-    "description": "Created social media content, event posters, promotional materials, and edited videos to support the ministry’s events and strengthen its online presence. Developed engaging visuals while maintaining a consistent and recognizable visual identity across digital and event materials.",
+    "description": "Created social media content, event posters, promotional materials, and edited videos to support the ministry's events and strengthen its online presence. Developed engaging visuals while maintaining a consistent and recognizable visual identity across digital and event materials.",
+    "overview": "This project involved creating visual materials that amplified the ministry's messages and supported volunteer-driven community events.",
+    "problem": "The ministry needed compelling digital assets that could quickly communicate events, values, and opportunities in an engaging way.",
+    "solution": "I designed event promotions, social content, and edited motion graphics around the ministry's spiritual messaging and community focus.",
+    "process": [
+      "Collected event goals and key messaging from the ministry team.",
+      "Designed promotional materials for social and print use.",
+      "Edited short-form videos to support digital engagement.",
+      "Adjusted the final visuals to fit the ministry's tone and audience."
+    ],
+    "features": [
+      "Event poster design",
+      "Volunteer campaign support",
+      "Video and social media content"
+    ],
+    "challenges": "The content had to feel uplifting and spiritually resonant while still being clear, modern, and easy to share online.",
+    "outcome": "The final assets helped the ministry communicate its message more effectively and gave its audience a more engaging digital experience.",
+    "link": "https://example.com/jesus-reigns",
+    "source": "https://example.com/jesus-reigns-source",
+    "status": "public",
+    "hero": {
+      "image": "images/projects/jrmbcn.png",
+      "alt": "Jesus Reigns Ministries social media and event design",
+      "description": "Event-driven creative work designed to inform, inspire, and connect the ministry's community online."
+    },
     "images": [
       "images/projects/jrmbcn.png"
     ],
@@ -25,23 +77,75 @@
   },
   {
     "id": "bubble-cutting-machine",
+    "slug": "bubble-cutting-machine",
     "title": "3D Bubble Cutting Machine",
+    "category": "Creative",
     "type": ["Print Design", "3D Modelling"],
     "tools": ["Blender", "Adobe Premiere Pro"],
     "date": "2024",
-    "description": "Designed and modeled a bubble cutting machine in 3D, creating a detailed digital model of its structure and components. Added a simple animation to demonstrate the machine’s movement and functionality.",
+    "description": "Designed and modeled a bubble cutting machine in 3D, creating a detailed digital model of its structure and components. Added a simple animation to demonstrate the machine's movement and functionality.",
+    "overview": "This design project explored the concept of a bubble cutting machine through a visual product study and animated demonstration.",
+    "problem": "The goal was to showcase a product concept in a way that clearly communicated both the machines form and function.",
+    "solution": "I created a 3D model and a short animated showcase to highlight the machine's structure and movement in a polished presentation.",
+    "process": [
+      "Conceptualized the machine components and overall shape.",
+      "Built the 3D model in Blender.",
+      "Structured the presentation to emphasize key mechanical elements.",
+      "Added motion to demonstrate the machine in action."
+    ],
+    "features": [
+      "3D product visualization",
+      "Functional concept animation",
+      "Mechanical detailing"
+    ],
+    "challenges": "The main challenge was making the machine feel both realistic and visually understandable without overcomplicating the structure.",
+    "outcome": "The final concept presentation communicated the product idea clearly and gave the design a more professional, presentation-ready finish.",
+    "link": "https://example.com/bubble-cutting-machine",
+    "source": "https://example.com/bubble-cutting-machine-source",
+    "status": "public",
+    "hero": {
+      "image": "images/projects/3dbubble.png",
+      "alt": "3D Bubble Cutting Machine concept render",
+      "description": "A 3D concept visualization of a bubble cutting machine showcasing the product in motion and form."
+    },
     "images": [
       "images/projects/3dbubble.png"
     ],
     "videoLinks": []
   },
   {
-    "id": "postcard-diamond-law-center",
+    "id": "diamond-law-center-postcard-design",
+    "slug": "diamond-law-center-postcard-design",
     "title": "Diamond Law Center Postcard Design",
+    "category": "Creative",
     "type": ["Graphic Design", "Poster Design", "Marketing Assets"],
     "tools": ["Canva"],
     "date": "2024",
     "description": "Designed promotional posters and marketing materials for the company, maintaining a consistent visual identity across each design. Focused on clear layouts, professional visuals, and brand consistency for ongoing content production.",
+    "overview": "This project centered on creating clean and persuasive postcard and print materials for a legal brand.",
+    "problem": "The client wanted marketing materials that looked professional, organized, and trustworthy while staying easy to read at a glance.",
+    "solution": "I designed a simple postcard layout with strong hierarchy, brand-friendly styling, and clear messaging for quick communication.",
+    "process": [
+      "Studied the brand's audience and positioning.",
+      "Developed a clean print layout with strong readability.",
+      "Applied a consistent visual system across the final design.",
+      "Adjusted spacing and composition for clarity and polish."
+    ],
+    "features": [
+      "Promotional postcard layout",
+      "Brand-aligned print design",
+      "Clear messaging and hierarchy"
+    ],
+    "challenges": "The design needed to balance professionalism with a polished aesthetic while keeping the information easy to scan.",
+    "outcome": "The final design gave the client's marketing material a cleaner, more high-end presentation that better represented the brand.",
+    "link": "https://example.com/diamond-law-center",
+    "source": "https://example.com/diamond-law-center-source",
+    "status": "public",
+    "hero": {
+      "image": "images/projects/diamondllc.png",
+      "alt": "Diamond Law Center postcard design",
+      "description": "A print and marketing asset designed for professional legal branding with a clean, trustworthy presentation."
+    },
     "images": [
       "images/projects/diamondllc.png"
     ],

@@ -76,9 +76,9 @@ export default function Work({ activeCategory }) {
 
                   <div className="creative-card__footer">
                     <h3 className="creative-card__title">{project.title}</h3>
-                    <button type="button" className="creative-card__button">
+                    <Link to={`/${project.slug || project.id || project.title}`} className="creative-card__button">
                       View Project <span aria-hidden="true">↗</span>
-                    </button>
+                    </Link>
                   </div>
 
                   <div className="creative-card__types">

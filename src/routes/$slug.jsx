@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Link } from '@tanstack/react-router'
 import projectsTech from '../data/projects_tech.json'
+import projectsCreative from '../data/projects_creative.json'
 
 export const Route = createFileRoute('/$slug')({
   component: projectPage,
@@ -8,7 +9,7 @@ export const Route = createFileRoute('/$slug')({
 
 function projectPage() {
   const { slug } = Route.useParams()
-  const project = projectsTech.find((item) => item.slug === slug)
+  const project = projectsTech.find((item) => item.slug === slug) || projectsCreative.find((item) => item.slug === slug)
 
   if (!project) {
     return (

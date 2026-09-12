@@ -132,7 +132,7 @@ export default function Work({ activeCategory }) {
           const description = project.overview || project.description;
           const image = project.hero?.image || project.background;
           const tools = project.technologies || project.tools || [];
-          const demoLink = project.demo || project.hero?.image || "#";
+          const demoLink = project.link || project.hero?.image || "#";
 
           return (
             <motion.div

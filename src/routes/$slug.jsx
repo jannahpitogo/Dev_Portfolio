@@ -56,14 +56,34 @@ function projectPage() {
           <p className="project-case-study__lede">{project.hero?.description}</p>
         </header>
 
-        <figure className="project-case-study__hero">
-          <img src={project.hero?.image} alt={project.hero?.alt || project.title} />
-        </figure>
+        <div className="project-case-study__gallery">
+          <figure className="project-case-study__hero">
+            <img src={project.hero?.image} alt={project.hero?.alt || project.title} />
+          </figure>
+
+          {(project.images?.length || project.gallery?.length) ? (
+            <div className="project-case-study__mini-gallery">
+              {(project.gallery && project.gallery.length ? project.gallery : project.images || []).slice(0, 5).map((image, index) => (
+                <figure key={`${image}-${index}`} className="project-case-study__mini-item">
+                  <img src={image} alt={`${project.title} detail ${index + 1}`} />
+                </figure>
+              ))}
+            </div>
+          ) : null}
+        </div>
 
         <section className="project-case-study__section">
-            <div className="project-case-study__label">Technologies</div>
+            <div className="project-case-study__label">TOOLS</div>
             <div className="project-case-study__tags">
-              {project.technologies?.map((tech) => (
+              {project.tools?.map((tech) => (
+                <span key={tech} className="project-case-study__tag">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="project-case-study__label">TYPE</div>
+            <div className="project-case-study__tags">
+              {project.type?.map((tech) => (
                 <span key={tech} className="project-case-study__tag">
                   {tech}
                 </span>

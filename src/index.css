@@ -912,6 +912,7 @@ h2{
   font-family: var(--font-sans);
   font-size: 0.9xrem;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .project-case-study__code-block {

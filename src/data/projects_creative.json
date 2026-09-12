@@ -24,8 +24,6 @@
       "Continue creating marketing materials and digital content to keep the brand’s visual presence fresh and consistent."
     ], 
     "outcome": "The brand gained a more cohesive and recognizable visual presence, with marketing materials that consistently reflected the clinic’s identity across different platforms.",
-    "link": "https://example.com/premiere-dent",
-    "source": "https://example.com/premiere-dent-source",
     "status": "public",
     "hero": {
       "image": "images/projects/premieredent_web.png",
@@ -50,24 +48,22 @@
     "tools": ["Canva", "Adobe Photoshop", "Adobe Lightroom", "Adobe Premiere Pro", "CapCut"],
     "date": "2025",
     "description": "Created social media content, event posters, promotional materials, and edited videos to support the ministry's events and strengthen its online presence. Developed engaging visuals while maintaining a consistent and recognizable visual identity across digital and event materials.",
-    "overview": "This project involved creating visual materials that amplified the ministry's messages and supported volunteer-driven community events.",
-    "problem": "The ministry needed compelling digital assets that could quickly communicate events, values, and opportunities in an engaging way.",
-    "solution": "I designed event promotions, social content, and edited motion graphics around the ministry's spiritual messaging and community focus.",
+    "overview": "Volunteer creative supporting Jesus Reigns Ministries Barcelona through weekly and event-based visual content. Collaborate with the team to create posters, presentations, roll-up banners, and promotional materials for ministry activities and events. Also manage and publish social media content, helping maintain a consistent and engaging online presence for the ministry.",
+    "problem": "The ministry has a consistent weekly demand for promotional and visual materials to communicate upcoming activities, events, and announcements. The challenge is to produce engaging and consistent content on a regular basis while helping the ministry reach a wider audience and maintain an active social media presence. This includes managing frequent design requests, adapting content for different formats such as social media posts, presentations, posters, and roll-up banners, and ensuring that promotional materials are delivered on time for each event.",
+    "solution": "Developed and maintained a consistent visual content workflow for weekly ministry activities and events. Collaborated with the creative team to design posters, social media graphics, presentations, and roll-up banners, ensuring materials were ready on time and aligned with the ministry’s visual identity. Supported the ministry’s social media presence by regularly publishing promotional content and adapting designs for digital platforms, helping communicate events effectively and increase audience reach.",
     "process": [
-      "Collected event goals and key messaging from the ministry team.",
-      "Designed promotional materials for social and print use.",
-      "Edited short-form videos to support digital engagement.",
-      "Adjusted the final visuals to fit the ministry's tone and audience."
+      "01 | Communication & Planning",
+      "Coordinate with the media team to understand the event, required materials, photo angles, content, and overall creative direction.",
+      "02 | Ideation & Brainstorming",
+      "Develop design concepts and brainstorm ideas with the team, gathering suggestions and discussing the best visual approach.",
+      "03 | Design & Production",
+      "Create the required promotional materials, including posters, social media graphics, presentations, and event banners.",
+      "04 | Review & Refinement",
+      "Share the designs with the team for feedback, make revisions, and ensure everyone is aligned on the final visuals and messaging.",
+      "05 | Publish & Deliver",
+      "Finalize the approved materials and publish the content across social media or prepare the materials for the upcoming event."
     ],
-    "features": [
-      "Event poster design",
-      "Volunteer campaign support",
-      "Video and social media content"
-    ],
-    "challenges": "The content had to feel uplifting and spiritually resonant while still being clear, modern, and easy to share online.",
-    "outcome": "The final assets helped the ministry communicate its message more effectively and gave its audience a more engaging digital experience.",
-    "link": "https://example.com/jesus-reigns",
-    "source": "https://example.com/jesus-reigns-source",
+    "outcome": "Established a consistent and organized visual presence for Jesus Reigns Ministries Barcelona through regular promotional content and event materials. The workflow helped the team communicate events clearly, maintain visual consistency, and reach a wider audience through timely social media content and engaging promotional designs.",
     "status": "public",
     "hero": {
       "image": "images/projects/jrmbcn.png",
@@ -75,7 +71,11 @@
       "description": "Event-driven creative work designed to inform, inspire, and connect the ministry's community online."
     },
     "images": [
-      "images/projects/jrmbcn.png"
+      "images/projects/jrm1.png",
+      "images/projects/jrm2.png",
+      "images/projects/jrm3.png",
+      "images/projects/jrm4.png",
+      "images/projects/jrm5.png"
     ],
     "videoLinks": []
   },

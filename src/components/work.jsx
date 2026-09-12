@@ -54,7 +54,7 @@ export default function Work({ activeCategory }) {
             }}
           >
             {creativeProjects.map((project, index) => {
-              const firstImage = project.images?.[0] || "/images/BubbleMachine.png";
+              const firstImage = project.hero?.image || project.images?.[0] || "/images/BubbleMachine.png";
               const projectTypes = Array.isArray(project.type) ? project.type : [project.type || "Creative"];
 
               return (
@@ -130,7 +130,7 @@ export default function Work({ activeCategory }) {
         {devProjects.map((project, index) => {
           const title = project.title || project.project_title;
           const description = project.overview || project.description;
-          const image = project.hero?.image || project.background || "images/premieredent.png";
+          const image = project.hero?.image || project.background;
           const tools = project.technologies || project.tools || [];
           const demoLink = project.demo || project.hero?.image || "#";
 

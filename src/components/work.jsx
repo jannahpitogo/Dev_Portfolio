@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { useMemo, useState } from "react";
 import devProjects from "../data/projects_tech.json";
 import creativeProjects from "../data/projects_creative.json";
 
@@ -24,37 +23,6 @@ export default function Work({ activeCategory }) {
 
   const isCreativeView = activeCategory === "creative";
 
-  const creativeFilters = [
-    "All",
-    "Graphic Design",
-    "Social Media",
-    "Print Design",
-    "Video Editing",
-    "3D / Other",
-  ];
-
-  const [selectedFilter, setSelectedFilter] = useState("All");
-
-  const filteredCreativeProjects = useMemo(() => {
-    if (selectedFilter === "All") {
-      return creativeProjects;
-    }
-
-    const query = selectedFilter.toLowerCase();
-
-    return creativeProjects.filter((project) => {
-      const projectTypes = (project.type || []).map((type) => type.toLowerCase());
-      const projectTitle = (project.title || "").toLowerCase();
-
-      if (query.includes("graphic")) return projectTypes.some((type) => type.includes("design")) || projectTitle.includes("brand") || projectTitle.includes("studio");
-      if (query.includes("social")) return projectTypes.some((type) => type.includes("social")) || projectTitle.includes("campaign") || projectTitle.includes("social");
-      if (query.includes("print")) return projectTypes.some((type) => type.includes("print")) || projectTitle.includes("poster") || projectTitle.includes("poster series");
-      if (query.includes("video")) return projectTypes.some((type) => type.includes("video")) || projectTitle.includes("travel") || projectTitle.includes("film");
-      if (query.includes("3d") || query.includes("other")) return projectTypes.some((type) => type.includes("3d") || type.includes("animation")) || projectTitle.includes("3d") || projectTitle.includes("machine");
-      return true;
-    });
-  }, [selectedFilter]);
-
   if (isCreativeView) {
     return (
       <section id="work" className="work--creative">
@@ -67,42 +35,40 @@ export default function Work({ activeCategory }) {
             A collection of my creative work, from branding and social media to print and video, created to help ideas stand out and connect with people.
           </p>
 
-          <div className="creative-filters" aria-label="Creative categories">
-            {creativeFilters.map((filter) => (
-              <button
-                key={filter}
-                type="button"
-                className={`creative-filter ${selectedFilter === filter ? "is-active" : ""}`}
-                onClick={() => setSelectedFilter(filter)}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-
           <div className="creative-grid">
-            {filteredCreativeProjects.map((project, index) => {
+            {creativeProjects.map((project, index) => {
               const firstImage = project.images?.[0] || "/images/BubbleMachine.png";
+              const projectTypes = Array.isArray(project.type) ? project.type : [project.type || "Creative"];
 
               return (
                 <article
                   key={`${project.id || project.title}-${index}`}
                   className="creative-card"
                 >
+                  <div className="creative-card__index">{String(index + 1).padStart(2, "0")}</div>
+
                   <div className="creative-card__media">
                     <img src={firstImage} alt={project.title} className="creative-card__image" />
                     {project.videoLinks?.length ? (
-                      <span className="creative-card__play" aria-label="Video project">
+                      <span className="creative-card__play" aria-hidden="true">
                         ▶
                       </span>
                     ) : null}
                   </div>
 
-                  <div className="creative-card__content">
+                  <div className="creative-card__footer">
                     <h3 className="creative-card__title">{project.title}</h3>
                     <button type="button" className="creative-card__button">
-                      View Project <span aria-hidden="true">→</span>
+                      View Project <span aria-hidden="true">↗</span>
                     </button>
+                  </div>
+
+                  <div className="creative-card__types">
+                    {projectTypes.map((type) => (
+                      <span key={`${project.title}-${type}`} className="creative-card__type">
+                        {type}
+                      </span>
+                    ))}
                   </div>
                 </article>
               );

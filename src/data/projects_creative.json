@@ -7,7 +7,7 @@
     "date": "2024",
     "description": "developed a cohesive visual presence for the clinic through branding, social media content, and digital marketing assets. Created graphics and promotional content that maintained a clean, professional, and approachable brand identity across online platforms",
     "images": [
-      "/images/premieredent.png"
+      "./src/assets/creative_projects/premieredent_web.png"
     ],
     "videoLinks": []
   },
@@ -24,51 +24,27 @@
     "videoLinks": []
   },
   {
-    "id": "event-poster-series",
-    "title": "Event Poster Series",
-    "type": ["Print Design", "Poster Design"],
-    "tools": ["Adobe Illustrator", "Photoshop"],
+    "id": "bubble-cutting-machine",
+    "title": "3D Bubble Cutting Machine",
+    "type": ["Print Design", "3D Modelling"],
+    "tools": ["Blender", "Adobe Premiere Pro"],
     "date": "2024",
-    "description": "A print campaign built around calm color, structured typography, and contemporary editorial composition.",
+    "description": "Designed and modeled a bubble cutting machine in 3D, creating a detailed digital model of its structure and components. Added a simple animation to demonstrate the machine’s movement and functionality.",
     "images": [
-      "/images/investIQ.png"
+      "./src/assets/creative_projects/3dbubble.png"
     ],
     "videoLinks": []
   },
   {
-    "id": "moments-travel-film",
-    "title": "Moments (Travel Film)",
-    "type": ["Video Editing"],
-    "tools": ["Premiere Pro", "DaVinci Resolve"],
+    "id": "postcard-diamond-law-center",
+    "title": "Diamond Law Center Postcard Design",
+    "type": ["Graphic Design", "Poster Design", "Marketing Assets"],
+    "tools": ["Canva"],
     "date": "2024",
-    "description": "A cinematic travel edit using subtle motion, soft transitions, and reflective storytelling to create a calm mood.",
+    "description": "Designed promotional posters and marketing materials for the company, maintaining a consistent visual identity across each design. Focused on clear layouts, professional visuals, and brand consistency for ongoing content production.",
     "images": [
-      "/images/jessica.avif"
+      "./src/assets/creative_projects/diamondllc.png"
     ],
-    "videoLinks": ["https://youtu.be/example-1"]
-  },
-  {
-    "id": "3d-character-render",
-    "title": "3D Character Render",
-    "type": ["3D Design", "Animation"],
-    "tools": ["Blender", "Cinema 4D"],
-    "date": "2024",
-    "description": "A stylized 3D character render with warm lighting and soft composition to emphasize personality and mood.",
-    "images": [
-      "/images/VA_portfolio.png"
-    ],
-    "videoLinks": []
-  },
-  {
-    "id": "real-estate-marketing-materials",
-    "title": "Real Estate Marketing Materials",
-    "type": ["Marketing Assets", "Print Design"],
-    "tools": ["Adobe InDesign", "Photoshop"],
-    "date": "2024",
-    "description": "A branded property marketing set mixing minimal layouts, polished imagery, and clean design for modern real-estate storytelling.",
-    "images": [
-      "/images/infobuilder.jpeg"
-    ],
-    "videoLinks": []
+    "videoLinks": [""]
   }
 ]

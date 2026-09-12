@@ -41,16 +41,20 @@ function projectPage() {
 
           <div className="project-case-study__meta">
             <span className="project-case-study__eyebrow">{project.category}</span>
-            <div className="project-case-study__links">
-              <a href={project.link} target="_blank" rel="noreferrer">
-                Live Demo ↗
-              </a>
-              {project.status === 'public' && project.source ? (
-                <a href={project.source} target="_blank" rel="noreferrer">
-                  Source ↗
-                </a>
-              ) : null}
-            </div>
+            {!isCreativeProject ? (
+              <div className="project-case-study__links">
+                {project.link ? (
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    Live Demo ↗
+                  </a>
+                ) : null}
+                {project.status === 'public' && project.source ? (
+                  <a href={project.source} target="_blank" rel="noreferrer">
+                    Source ↗
+                  </a>
+                ) : null}
+              </div>
+            ) : null}
           </div>
 
           <h1 className="project-case-study__title">{project.title}</h1>

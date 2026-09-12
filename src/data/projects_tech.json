@@ -7,7 +7,7 @@
     "title": "Premiere Dent Dental Clinic",
     "category": "Web Development",
     "hero": {
-      "image": "images/premieredent.png",
+      "image": "./src/assets/projects/premieredent_web.png",
       "description": "A clean, trust-focused dental clinic website built to improve visibility, simplify appointment inquiries, and present services clearly.",
       "alt": "Premiere Dent Dental Clinic homepage"
     },
@@ -42,7 +42,7 @@
     "title": "VA Portfolio",
     "category": "Web Development",
     "hero": {
-      "image": "images/VA_portfolio.png",
+      "image": "./src/assets/projects/portfoliova.png",
       "description": "A personal portfolio website showcasing digital services, skills, and project highlights with a clear contact pathway.",
       "alt": "VA portfolio landing page"
     },
@@ -75,7 +75,7 @@
     "title": "InvestIQ",
     "category": "Web Development",
     "hero": {
-      "image": "images/investIQ.png",
+      "image": "./src/assets/projects/investiq.png",
       "description": "A full-stack investment dashboard focused on portfolio insights, analysis, and user-friendly financial data visualization.",
       "alt": "InvestIQ dashboard interface"
     },
@@ -110,7 +110,7 @@
     "title": "Beyond The Stars",
     "category": "Game Development",
     "hero": {
-      "image": "images/beyond-the-stars.webp",
+      "image": "./src/assets/projects/beyondthestars.png",
       "description": "A 2D platformer game blending gameplay mechanics, level design, and custom art assets into a playable experience.",
       "alt": "Beyond The Stars gameplay screenshot"
     },

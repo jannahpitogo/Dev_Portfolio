@@ -7,7 +7,7 @@
     "date": "2024",
     "description": "developed a cohesive visual presence for the clinic through branding, social media content, and digital marketing assets. Created graphics and promotional content that maintained a clean, professional, and approachable brand identity across online platforms",
     "images": [
-      "./src/assets/creative_projects/premieredent_web.png"
+      "./src/assets/projects/premieredent_web.png"
     ],
     "videoLinks": []
   },
@@ -19,7 +19,7 @@
     "date": "2025",
     "description": "Created social media content, event posters, promotional materials, and edited videos to support the ministry’s events and strengthen its online presence. Developed engaging visuals while maintaining a consistent and recognizable visual identity across digital and event materials.",
     "images": [
-      "./src/assets/creative_projects/jrmbcn.png"
+      "./src/assets/projects/jrmbcn.png"
     ],
     "videoLinks": []
   },
@@ -31,7 +31,7 @@
     "date": "2024",
     "description": "Designed and modeled a bubble cutting machine in 3D, creating a detailed digital model of its structure and components. Added a simple animation to demonstrate the machine’s movement and functionality.",
     "images": [
-      "./src/assets/creative_projects/3dbubble.png"
+      "./src/assets/projects/3dbubble.png"
     ],
     "videoLinks": []
   },
@@ -43,7 +43,7 @@
     "date": "2024",
     "description": "Designed promotional posters and marketing materials for the company, maintaining a consistent visual identity across each design. Focused on clear layouts, professional visuals, and brand consistency for ongoing content production.",
     "images": [
-      "./src/assets/creative_projects/diamondllc.png"
+      "./src/assets/projects/diamondllc.png"
     ],
     "videoLinks": [""]
   }

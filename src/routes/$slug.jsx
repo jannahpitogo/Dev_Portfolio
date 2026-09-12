@@ -83,7 +83,19 @@ function projectPage() {
           ) : null}
         </div>
 
-        <section className="project-case-study__section">
+        {!isCreativeProject ? (
+          <section className="project-case-study__section">
+            <div className="project-case-study__label">Technologies</div>
+            <div className="project-case-study__tags">
+              {project.tools?.map((tech) => (
+                <span key={tech} className="project-case-study__tag">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </section>
+        ) : (
+          <section className="project-case-study__section">
             <div className="project-case-study__label">TOOLS</div>
             <div className="project-case-study__tags">
               {project.tools?.map((tech) => (
@@ -101,6 +113,7 @@ function projectPage() {
               ))}
             </div>
           </section>
+        )}
 
         <div className="project-case-study__content">
           <section className="project-case-study__section">

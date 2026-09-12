@@ -35,15 +35,32 @@ export default function Work({ activeCategory }) {
             A collection of my creative work, from branding and social media to print and video, created to help ideas stand out and connect with people.
           </p>
 
-          <div className="creative-grid">
+          <motion.div
+            className="creative-grid"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+              once: true,
+              amount: 0.1,
+            }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: {
+                  staggerChildren: 0.15,
+                },
+              },
+            }}
+          >
             {creativeProjects.map((project, index) => {
               const firstImage = project.images?.[0] || "/images/BubbleMachine.png";
               const projectTypes = Array.isArray(project.type) ? project.type : [project.type || "Creative"];
 
               return (
-                <article
+                <motion.article
                   key={`${project.id || project.title}-${index}`}
                   className="creative-card"
+                  variants={projectVariants}
                 >
                   <div className="creative-card__index">{String(index + 1).padStart(2, "0")}</div>
 
@@ -70,10 +87,10 @@ export default function Work({ activeCategory }) {
                       </span>
                     ))}
                   </div>
-                </article>
+                </motion.article>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </section>
     );

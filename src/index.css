@@ -777,13 +777,15 @@ h2{
   width: fit-content;
   padding: 7px 12px;
   border-radius: 999px;
-  background: var(--color-muted);
-  border: 1px solid var(--color-border);
-  color: var(--color-foreground);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text);
+  font-size: 0.7rem;
+  line-height: 1.1;
+  font-family: var(--font-sans);
+  white-space: nowrap;
 }
 
 .project-case-study__links {

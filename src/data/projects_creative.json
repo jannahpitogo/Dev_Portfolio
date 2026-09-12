@@ -84,28 +84,27 @@
     "slug": "bubble-cutting-machine",
     "title": "3D Bubble Cutting Machine",
     "category": "Creative",
-    "type": ["Print Design", "3D Modelling"],
+    "type": ["Print Design", "3D Modelling", "3D Animation"],
     "tools": ["Blender", "Adobe Premiere Pro"],
     "date": "2024",
     "description": "Designed and modeled a bubble cutting machine in 3D, creating a detailed digital model of its structure and components. Added a simple animation to demonstrate the machine's movement and functionality.",
-    "overview": "This design project explored the concept of a bubble cutting machine through a visual product study and animated demonstration.",
-    "problem": "The goal was to showcase a product concept in a way that clearly communicated both the machines form and function.",
-    "solution": "I created a 3D model and a short animated showcase to highlight the machine's structure and movement in a polished presentation.",
+    "overview": "Created a 3D model and animation of a bubble wrap cutting machine, showcasing its main components, basic functions, and how the machine operates. The animation visually demonstrates the assembly, movement, and cutting process to make the machine’s functionality easier to understand.",
+    "problem": "The client needed a 3D model and animation to demonstrate the machine’s design and functionality, but previous outsourcing options were costly and did not accurately meet the project requirements. The challenge was to create a more affordable and accurate visual solution that reflected the actual product, its components, and how it operates.",
+    "solution": "Created a custom 3D model, product images, and animation based on the client’s actual product and requirements. Despite having a limited timeframe, I efficiently modeled the machine’s key components and animated its basic functionality, delivering the final visuals on time and within the client’s deadline. The result was a more accurate, cost-effective, and practical visual solution for presenting the product.",
     "process": [
-      "Conceptualized the machine components and overall shape.",
-      "Built the 3D model in Blender.",
-      "Structured the presentation to emphasize key mechanical elements.",
-      "Added motion to demonstrate the machine in action."
+      "01 | Client Brief & Discovery",
+      "Set up a meeting with the client to understand their vision, requirements, and deadline for the product images and animation. Discussed the machine’s basic functionalities and requested any available technical documentation, references, or product materials to accurately visualize the machine.",
+      "02 | Planning & Preparation",
+      "Planned the 3D model by identifying the individual components, measurements, materials, and moving parts needed. Organized the workflow and prepared the necessary elements before starting the modeling and animation.",
+      "03 | 3D Modeling & Animation",
+      "Built the machine and its key components in 3D, then developed the basic movements and functionality animations to demonstrate how the parts work together and how the machine operates.",
+      "04 | Review & Refinement",
+      "Presented the progress to the client and gathered feedback on the visuals, animation, functionality, and overall presentation. Made the necessary adjustments to ensure the final output matched their expectations.",
+      "05 | Final Delivery",
+      "Finalized and rendered the 3D animation and product images, then met with the client to review and deliver all the completed materials within the agreed deadline."
+
     ],
-    "features": [
-      "3D product visualization",
-      "Functional concept animation",
-      "Mechanical detailing"
-    ],
-    "challenges": "The main challenge was making the machine feel both realistic and visually understandable without overcomplicating the structure.",
-    "outcome": "The final concept presentation communicated the product idea clearly and gave the design a more professional, presentation-ready finish.",
-    "link": "https://example.com/bubble-cutting-machine",
-    "source": "https://example.com/bubble-cutting-machine-source",
+    "outcome": "Successfully delivered the 3D model, product images, and animation within the client’s deadline, meeting the agreed requirements and requested functionality. The final output accurately represented the machine and its key components, and the client was satisfied with the completed work and overall result.",
     "status": "public",
     "hero": {
       "image": "images/projects/3dbubble.png",
@@ -113,7 +112,11 @@
       "description": "A 3D concept visualization of a bubble cutting machine showcasing the product in motion and form."
     },
     "images": [
-      "images/projects/3dbubble.png"
+      "images/projects/bc1.png",
+      "images/projects/bc2.png",
+      "images/projects/bc3.png",
+      "images/projects/bc4.png",
+      "images/projects/bc5.png"
     ],
     "videoLinks": []
   },

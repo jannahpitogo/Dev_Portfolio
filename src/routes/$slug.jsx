@@ -16,7 +16,7 @@ function projectPage() {
       <section className="project-case-study project-case-study--empty">
         <div className="project-case-study__wrap">
           <Link to="/" className="project-case-study__back">
-            ← Back to home
+            ← Back to Home
           </Link>
           <p>Project not found.</p>
         </div>
@@ -36,7 +36,7 @@ function projectPage() {
             hash="work"
             className="project-case-study__back"
           >
-            ← Back to projects
+            ← Back to Projects
           </Link>
 
           <div className="project-case-study__meta">

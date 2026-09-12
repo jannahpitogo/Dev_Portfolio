@@ -32,6 +32,7 @@ function projectPage() {
         <header className="project-case-study__header">
           <Link
             to={`/?category=${projectCategory}`}
+            hash="work"
             className="project-case-study__back"
           >
             ← Back to case studies

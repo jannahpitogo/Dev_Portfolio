@@ -36,7 +36,7 @@ function projectPage() {
             hash="work"
             className="project-case-study__back"
           >
-            ← Back to case studies
+            ← Back to projects
           </Link>
 
           <div className="project-case-study__meta">

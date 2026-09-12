@@ -1,4 +1,4 @@
-import jannah from "../assets/jannah.png";
+import jannah from "../assets/jannah.webp";
 import { motion } from "motion/react";
 
 export default function About({activeCategory}) {

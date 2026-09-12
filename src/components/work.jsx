@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import devProjects from "../data/projects_tech.json";
 import creativeProjects from "../data/projects_creative.json";
 
+
 export default function Work({ activeCategory }) {
   const projectVariants = {
     hidden: {

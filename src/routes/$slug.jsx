@@ -74,6 +74,12 @@ function projectPage() {
                 </figure>
               ))}
             </div>
+
+            
+
+
+
+            
           ) : null}
         </div>
 
@@ -144,6 +150,13 @@ function projectPage() {
             <p>{project.outcome}</p>
           </section>
         </div>
+
+        <Link
+            to={`/?category=${projectCategory}`}
+            hash="work"
+            className="project-case-study__back">
+            ← Back to case studies
+            </Link>
       </div>
     </article>
   )

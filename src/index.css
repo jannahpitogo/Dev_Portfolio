@@ -206,9 +206,101 @@ textarea {
 }
 
 @media (max-width: 600px) {
+  .hero,
+  .about,
+  #stack,
+  #work,
+  .contact,
+  .experiences,
+  .project-case-study__wrap {
+    width: min(100% - 20px, var(--content-width));
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 52px 0 32px;
+  }
+
   .hero p,
   code {
     width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0 48px;
+    text-align: left;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-content-screen {
+    padding: 16px;
+  }
+
+  #stack,
+  #work {
+    padding-bottom: 48px;
+  }
+
+  .work-projects,
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .creative-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 15vw, 3.4rem);
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-img {
+    width: 56%;
+    max-width: 220px;
+  }
+
+  .project,
+  .creative-card,
+  .experience-card {
+    width: 100%;
+  }
+
+  .work-project-title,
+  .creative-card__title,
+  .experience-content h3 {
+    font-size: 0.98rem;
+  }
+
+  .project-content,
+  .creative-card__footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact {
+    width: min(100% - 20px, var(--content-width));
+    padding: 56px 0 64px;
+    gap: 22px;
+  }
+
+  .contact-header {
+    font-size: clamp(2.3rem, 12vw, 3.4rem);
   }
 }
 
@@ -705,6 +797,7 @@ h2{
   gap: 3px;
   width: 100%;
   min-height: 30px;
+  max-width: 100%;
 }
 
 .tech-button {
@@ -715,12 +808,13 @@ h2{
   border: 1px solid var(--color-border);
   background: rgba(255, 255, 255, 0.2);
   color: var(--color-text);
-  padding: 0.28rem 0.5rem;
-  font-size: 0.7rem;
+  padding: clamp(0.2rem, 0.8vw, 0.28rem) clamp(0.4rem, 1.3vw, 0.5rem);
+  font-size: clamp(0.58rem, 1.6vw, 0.7rem);
   line-height: 1.1;
   letter-spacing: 0.04em;
   font-family: var(--font-sans);
   white-space: nowrap;
+  max-width: 100%;
 }
 
 .project-case-study {
@@ -910,7 +1004,7 @@ h2{
   margin: 0;
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 0.9xrem;
+  font-size: 0.9rem;
   line-height: 1.8;
   text-align: justify;
 }
@@ -948,26 +1042,29 @@ h2{
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .project-case-study__tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: clamp(0.4rem, 1vw, 0.5rem) clamp(0.7rem, 1.6vw, 0.9rem);
   border: 1px solid var(--color-border);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.2);
   color: var(--color-text);
-  font-size: 0.7rem;
+  font-size: clamp(0.58rem, 1.4vw, 0.7rem);
   line-height: 1.1;
   letter-spacing: 0.04em;
   font-family: var(--font-sans);
   white-space: nowrap;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
   .project-case-study__wrap {
+    width: min(100% - 28px, 980px);
     padding-top: 24px;
   }
 
@@ -981,7 +1078,95 @@ h2{
   }
 
   .project-case-study__hero {
+    width: 100%;
     border-radius: 14px;
+  }
+
+  .project-case-study__mini-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-case-study__title {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+  }
+
+  .project-case-study__lede {
+    max-width: 100%;
+    font-size: 0.97rem;
+  }
+
+  .project-case-study__section {
+    padding: 20px 0;
+  }
+
+  .project-case-study__section p,
+  .project-case-study__section li {
+    font-size: 0.9rem;
+  }
+
+  .project-case-study__tags {
+    gap: 8px;
+  }
+
+  .project-case-study__tag {
+    font-size: 0.64rem;
+    padding: 7px 10px;
+  }
+
+  .techstack-container,
+  .experience-tools {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .tech-button,
+  .experience-tools span {
+    font-size: clamp(0.56rem, 2vw, 0.68rem);
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-case-study__wrap {
+    width: min(100% - 20px, 980px);
+    padding-bottom: 60px;
+  }
+
+  .project-case-study__header {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .project-case-study__links {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .project-case-study__title {
+    letter-spacing: -0.04em;
+  }
+
+  .project-case-study__mini-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .project-case-study__tags {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .techstack-container,
+  .experience-tools {
+    gap: 5px;
+  }
+
+  .tech-button,
+  .experience-tools span,
+  .project-case-study__tag {
+    font-size: 0.56rem;
+    padding: 4px 6px;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1196,11 +1381,12 @@ footer a:hover{
   flex-wrap: wrap;
   gap: 3px;
   margin-top: 9px;
+  max-width: 100%;
 }
 
 .experience-tools span {
-  padding: 3px 8px;
-  font-size: 0.67rem;
+  padding: clamp(0.2rem, 0.9vw, 0.3rem) clamp(0.4rem, 1.4vw, 0.7rem);
+  font-size: clamp(0.56rem, 1.5vw, 0.67rem);
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -1212,6 +1398,7 @@ footer a:hover{
   letter-spacing: 0.04em;
   font-family: var(--font-sans);
   white-space: nowrap;
+  max-width: 100%;
 }
 
 .experience-meta {
@@ -1332,4 +1519,286 @@ footer {
   min-height: 72px;
   display: flex;
   align-items: center;
+}
+
+/* Mobile responsiveness — targeted overrides only */
+@media (max-width: 600px) {
+  .hero,
+  .about,
+  #stack,
+  #work,
+  .contact,
+  .experiences,
+  .project-case-study__wrap {
+    width: calc(100% - 32px);
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 52px 0 32px;
+  }
+
+  .hero-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 15vw, 3.4rem);
+    line-height: 1;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p,
+  code {
+    width: 100%;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  /* Keep the animated icon track wide, but clip it inside the phone. */
+  #stack {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .stack-icons {
+    width: max-content;
+    max-width: none;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .tech-icon-container {
+    width: 62px;
+    min-width: 62px;
+    margin-top: 15px;
+  }
+
+  .stack-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0 48px;
+    text-align: left;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-content-screen {
+    padding: 16px;
+  }
+
+  .about-img {
+    width: 56%;
+    max-width: 220px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  #stack,
+  #work {
+    padding-bottom: 48px;
+  }
+
+  .stack-icons {
+    gap: 10px;
+  }
+
+  .tech-icon-container {
+    width: 62px;
+    min-width: 62px;
+  }
+
+  .stack-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .work-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .creative-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .creative-portfolio__title {
+    font-size: clamp(2.3rem, 11vw, 3rem);
+  }
+
+  .creative-portfolio__description {
+    font-size: 0.9rem;
+  }
+
+  .creative-card__footer {
+    gap: 8px;
+  }
+
+  .work-project-description {
+    width: 100%;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project-case-study__wrap {
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+
+  .project-case-study__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-case-study__links {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .project-case-study__section--split {
+    grid-template-columns: 1fr;
+  }
+
+  .project-case-study__hero {
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .project-case-study__mini-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .project-case-study__title {
+    font-size: clamp(2.2rem, 10vw, 2.8rem);
+    letter-spacing: -0.04em;
+  }
+
+  .project-case-study__lede {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .project-case-study__section {
+    padding: 20px 0;
+  }
+
+  .project-case-study__section p,
+  .project-case-study__section li {
+    font-size: 0.9rem;
+  }
+
+  .project-case-study__tags {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .project-case-study__tag {
+    font-size: 0.56rem;
+    padding: 4px 6px;
+    letter-spacing: 0.02em;
+  }
+
+  .contact {
+    width: calc(100% - 32px);
+    padding: 60px 0;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .contact-header {
+    width: 100%;
+    font-size: clamp(2.3rem, 12vw, 3.4rem);
+  }
+
+  .experiences {
+    width: calc(100% - 32px);
+    padding: 60px 0 70px;
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .experience-image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .experience-meta {
+    grid-column: 1;
+    min-height: auto;
+    padding: 10px 0 0;
+    border-top: 1px solid rgba(128, 169, 192, 0.15);
+    border-left: 0;
+  }
+
+  .techstack-container,
+  .experience-tools {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .tech-button,
+  .experience-tools span {
+    font-size: clamp(0.56rem, 2vw, 0.68rem);
+    padding: 4px 8px;
+  }
+
+  .footer-content {
+    min-height: auto;
+    padding: 16px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #stack {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .stack-icons {
+    gap: 8px;
+  }
+
+  .tech-icon-container {
+    width: 56px;
+    min-width: 56px;
+  }
+
+  .stack-icon {
+    width: 36px;
+    height: 36px;
+  }
 }

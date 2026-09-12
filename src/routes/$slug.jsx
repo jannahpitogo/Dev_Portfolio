@@ -25,6 +25,7 @@ function projectPage() {
   }
 
   const projectCategory = project.category?.toLowerCase() === 'creative' ? 'creative' : 'dev'
+  const isCreativeProject = projectCategory === 'creative'
 
   return (
     <article className="project-case-study">
@@ -117,20 +118,22 @@ function projectPage() {
             </ol>
           </section>
 
-          <section className="project-case-study__section project-case-study__section--split">
-            <div>
-              <div className="project-case-study__label">Features</div>
-              <ul className="project-case-study__list project-case-study__list--bullets">
-                {project.features?.map((feature) => (
-                  <li key={feature}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <div className="project-case-study__label">Challenges</div>
-              <p>{project.challenges}</p>
-            </div>
-          </section>
+          {!isCreativeProject ? (
+            <section className="project-case-study__section project-case-study__section--split">
+              <div>
+                <div className="project-case-study__label">Features</div>
+                <ul className="project-case-study__list project-case-study__list--bullets">
+                  {project.features?.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <div className="project-case-study__label">Challenges</div>
+                <p>{project.challenges}</p>
+              </div>
+            </section>
+          ) : null}
 
           <section className="project-case-study__section">
             <div className="project-case-study__label">Outcome</div>

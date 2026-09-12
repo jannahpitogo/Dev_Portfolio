@@ -58,11 +58,13 @@
   --color-foreground: #242321;
   --color-card: #FFFDF9;
   --color-muted: #EDE7DF;
-  --color-muted-foreground: #6F6A63;
+  --color-muted-foreground: #9aadb7;
   --color-accent: #334195;
   --color-accent-hover: #A95438;
   --color-border: #E5DED5;
-  ---background-color-transparent: rgba(160, 160, 160, 0.4);
+  --card-background: rgba(21, 37, 45, 0.46);
+  
+
 }
 
 .dark {
@@ -76,7 +78,7 @@
   --color-accent: #D98260;
   --color-accent-hover: #E39575;
   --color-border: #403A34;
-   ---background-color-transparent: rgba(16, 15, 14, 0.5);
+  --card-background : rgba(21, 37, 45, 0.46);
 }
 
 * {
@@ -240,7 +242,7 @@ textarea {
 
 .about-text,
 p {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 400;
   margin-bottom: 20px;
@@ -575,7 +577,7 @@ h2{
 }
 
 .project {
-  background-color: var(---background-color-transparent);
+  background: var(--card-background);
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -624,7 +626,7 @@ h2{
 .work-project-title {
   width: 100%;
   font-weight: 700;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1.05rem;
   margin: 0;
   padding: 10px 0;
@@ -672,6 +674,7 @@ h2{
   line-height: 1.45;
   margin: 0 0 10px;
   overflow-wrap: anywhere;
+  color: var(--color-muted-foreground);
 }
 
 .project-button-container {
@@ -692,7 +695,7 @@ h2{
 
 .work-project-button:hover {
   text-decoration: underline;
-  color: var(--color-foreground);
+  color: var(--color-text);
 }
 
 .techstack-container {
@@ -1104,7 +1107,7 @@ footer a:hover{
   padding: 12px 20px 12px 15px;
   border: 1px solid rgba(128, 169, 192, 0.18);
   border-radius: 12px;
-  background: rgba(21, 37, 45, 0.46);
+  background: var(--card-background);
 }
 
 .experience-image {
@@ -1127,7 +1130,12 @@ footer a:hover{
   line-height: 1.2;
 }
 
-.experience-company,
+.experience-company {
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  margin: 0px;
+}
+
 .experience-description,
 .experience-meta p {
   margin: 0;
@@ -1140,23 +1148,30 @@ footer a:hover{
   max-width: 560px;
   margin-top: 7px;
   line-height: 1.35;
+  color: var(--color-muted-foreground);
 }
 
 .experience-tools {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 3px;
   margin-top: 9px;
 }
 
 .experience-tools span {
-  padding: 5px 11px;
-  border-radius: 8px;
-  background: rgba(52, 76, 88, 0.5);
-  color: #c9d4d9;
-  font-family: var(--font-sans);
+  padding: 3px 8px;
   font-size: 0.67rem;
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text);
+  letter-spacing: 0.04em;
+  font-family: var(--font-sans);
+  white-space: nowrap;
 }
 
 .experience-meta {

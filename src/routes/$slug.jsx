@@ -87,7 +87,7 @@ function projectPage() {
           <section className="project-case-study__section">
             <div className="project-case-study__label">Technologies</div>
             <div className="project-case-study__tags">
-              {project.tools?.map((tech) => (
+              {project.technologies?.map((tech) => (
                 <span key={tech} className="project-case-study__tag">
                   {tech}
                 </span>

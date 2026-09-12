@@ -1258,3 +1258,38 @@ footer a:hover{
   height: 20px;
   width: 20px;
 }
+
+.footer-content {
+  max-width: 80rem;
+  width: 100%;
+  min-height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.footer-content p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+}

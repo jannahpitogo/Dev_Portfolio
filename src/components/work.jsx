@@ -82,14 +82,14 @@ export default function Work({ activeCategory }) {
   return (
     <section id="work">
       <div className="work-header">
-        <div>
+        <div className="work-header-button">
           <h2 className="work-text">Selected Works</h2>
           <Link to="/projects" className="work-main_button">
             Playground {">"}
           </Link>
         </div>
 
-        <p>A selection of web projects showcasing my development skills, technical problem-solving, and experience building functional digital experiences.</p>
+        <p className="header-description">A selection of web projects showcasing my development skills, technical problem-solving, and experience building functional digital experiences.</p>
       </div>
 
       <motion.div

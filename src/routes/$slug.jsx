@@ -155,7 +155,7 @@ function projectPage() {
             to={`/?category=${projectCategory}`}
             hash="work"
             className="project-case-study__back">
-            ← Back to case studies
+            ← Back to Projects
             </Link>
       </div>
     </article>

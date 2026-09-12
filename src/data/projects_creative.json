@@ -121,8 +121,8 @@
     "videoLinks": []
   },
   {
-    "id": "diamond-law-center-postcard-design",
-    "slug": "diamond-law-center-postcard-design",
+    "id": "diamond-law-center",
+    "slug": "diamond-law-center",
     "title": "Diamond Law Center Postcard Design",
     "category": "Creative",
     "type": ["Graphic Design", "Poster Design", "Marketing Assets"],
@@ -154,7 +154,11 @@
       "description": "A print and marketing asset designed for professional legal branding with a clean, trustworthy presentation."
     },
     "images": [
-      "images/projects/diamondllc.png"
+      "images/projects/diamond1.png",
+      "images/projects/diamond5.png",
+      "images/projects/diamond2.png",
+      "images/projects/diamond3.png",
+      "images/projects/diamond4.png"
     ],
     "videoLinks": [""]
   }

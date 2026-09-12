@@ -202,6 +202,7 @@ textarea {
 
 .hero p{
   width: min(100%, 810px);
+  font-size: 14.72px;
 }
 
 @media (max-width: 600px) {
@@ -388,7 +389,7 @@ p {
 .creative-portfolio__description {
   max-width: 780px;
   margin: 0 auto;
-  font-size: 1.08rem;
+  font-size: 14.72px;
   line-height: 1.7;
   color: var(--color-text);
   opacity: 0.82;

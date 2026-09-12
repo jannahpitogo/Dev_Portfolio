@@ -24,11 +24,16 @@ function projectPage() {
     )
   }
 
+  const projectCategory = project.category?.toLowerCase() === 'creative' ? 'creative' : 'dev'
+
   return (
     <article className="project-case-study">
       <div className="project-case-study__wrap">
         <header className="project-case-study__header">
-          <Link to="/" hash="work" className="project-case-study__back">
+          <Link
+            to={`/?category=${projectCategory}`}
+            className="project-case-study__back"
+          >
             ← Back to case studies
           </Link>
 

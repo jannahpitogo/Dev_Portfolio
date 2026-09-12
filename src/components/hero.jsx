@@ -1,16 +1,19 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import  {Tech, Creative}  from "./techstack";
-import { circle } from "motion/react-client";
+import { Tech, Creative } from "./techstack";
 
-export default function Hero({setActiveCategory, activeCategory}) {
+export default function Hero({ setActiveCategory, activeCategory }) {
   return (
     <section className="hero">
       <div className="live-indicator-holder">
         <span className="indicator">
           <div className={activeCategory === "dev" ? "circle blink" : "circle"} aria-hidden="true"></div>
 
-          <Link className={`portfolio-main_button ${activeCategory === "dev" ? "active" : ""}`} to="/" onClick={() => setActiveCategory("dev")}>
+          <Link
+            className={`portfolio-main_button ${activeCategory === "dev" ? "active" : ""}`}
+            to="/?category=dev"
+            onClick={() => setActiveCategory("dev")}
+          >
             DEV
           </Link>
         </span>
@@ -18,52 +21,58 @@ export default function Hero({setActiveCategory, activeCategory}) {
         <span className="indicator">
           <div className={activeCategory === "creative" ? "circle blink" : "circle"} aria-hidden="true"></div>
 
-          <Link className={`portfolio-main_button ${activeCategory === "creative" ? "active" : ""}`} to="/" onClick={() => setActiveCategory("creative")}>
+          <Link
+            className={`portfolio-main_button ${activeCategory === "creative" ? "active" : ""}`}
+            to="/?category=creative"
+            onClick={() => setActiveCategory("creative")}
+          >
             CREATIVE
           </Link>
         </span>
       </div>
-      
+
       {activeCategory === "dev" ? (
         <div className="hero-content">
           <h1 className="hero-title">
-          {" "}
-          <motion.span 
-            key={activeCategory}
-            style={{display: "inline-block"}}
-            initial={{y: -100, opacity: 0}}
-            animate={{y: 0, opacity: 1}}
-            transition={{
-              type: "spring",
-              stiffness: 200, 
-              damping: 10,
-            }}>
+            <motion.span
+              key={activeCategory}
+              style={{ display: "inline-block" }}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+            >
               Web Developer
             </motion.span>
-            </h1>
-            <p>Hi, I'm Jannah! Full-Stack Web Developer with a creative side and a strong eye for UI, 
-              blending technical skills with visual design to build functional and engaging 
-              digital experiences.</p>
-            <Tech></Tech>
+          </h1>
+          <p>
+            Hi, I'm Jannah! Full-Stack Web Developer with a creative side and a strong eye for UI,
+            blending technical skills with visual design to build functional and engaging digital experiences.
+          </p>
+          <Tech></Tech>
         </div>
       ) : (
         <div className="hero-content">
           <h1 className="hero-title">
-            {" "}
             <motion.span
-            key={activeCategory}
-            style={{display: "inline-block"}}
-            initial={{y:-100, opacity: 0}}
-            animate={{y:0, opacity: 1}}
-            transition={{
-              type: "spring",
-              stiffness: 200, 
-              damping: 10,
-            }}>
+              key={activeCategory}
+              style={{ display: "inline-block" }}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+            >
               Multimedia Designer
             </motion.span>
           </h1>
-          <p>Hi, I'm Jannah! Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation, 
+          <p>
+            Hi, I'm Jannah! Multimedia Artist specializing in graphic design, 3D modeling, simple 3D animation,
             video editing, and digital media. Combining creative and technical skills to produce high-quality output.
           </p>
           <Creative></Creative>

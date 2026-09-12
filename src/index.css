@@ -481,11 +481,12 @@ p {
 .creative-card__title {
   margin: 0;
   font-family: var(--font-sans);
-  font-size: clamp(1.1rem, 1.3vw, 1.7rem);
+  font-size: clamp(1rem, 1vw, 1.2rem);
   line-height: 1.2;
-  color: var(--color-foreground);
+  color: var(--color-text);
   letter-spacing: -0.04em;
   flex: 1;
+  text-align: left;
 }
 
 .creative-card__button {
@@ -494,8 +495,8 @@ p {
   background: rgba(24, 22, 19, 0.84);
   color: #f6f3ee;
   border-radius: 999px;
-  padding: 0.72rem 1.1rem;
-  font-size: 0.86rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.6rem;
   font-weight: 600;
   font-family: var(--font-sans);
   cursor: pointer;
@@ -508,7 +509,7 @@ p {
 .creative-card__types {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px;
   padding: 0 2px;
 }
 
@@ -519,10 +520,11 @@ p {
   border-radius: 999px;
   border: 1px solid var(--color-border);
   background: rgba(255, 255, 255, 0.2);
-  color: var(--color-foreground);
-  padding: 0.38rem 0.65rem;
+  color: var(--color-text);
+  padding: 0.28rem 0.5rem;
   font-size: 0.7rem;
-  line-height: 1;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
   font-family: var(--font-sans);
   white-space: nowrap;
 }

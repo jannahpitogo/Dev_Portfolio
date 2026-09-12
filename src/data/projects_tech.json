@@ -23,8 +23,7 @@
       "HTML",
       "JavaScript",
       "Tailwind CSS",
-      "Cloudflare",
-      "Resend API"
+      "Cloudflare"
     ],
     "features": [
       "Responsive clinic landing page",
@@ -91,8 +90,7 @@
       "ReactJS",
       "Tailwind CSS",
       "NodeJS",
-      "Express",
-      "PostgreSQL"
+      "Express"
     ],
     "features": [
       "Investment portfolio dashboard",

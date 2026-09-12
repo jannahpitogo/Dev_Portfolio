@@ -10,6 +10,15 @@
 }
 
 @font-face {
+  font-family: "Horizon";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("./assets/fonts/Horizon.woff2")
+    format("woff2");
+}
+
+@font-face {
   font-family: "Lora";
   font-style: normal;
   font-weight: 400 700;
@@ -45,12 +54,12 @@
 
   /* Warm Ivory + Terracotta */
   --color-background: #F7F3EE;
-  --color-text: #FFFDF9;
+  --color-text: #ffffff;
   --color-foreground: #242321;
   --color-card: #FFFDF9;
   --color-muted: #EDE7DF;
   --color-muted-foreground: #6F6A63;
-  --color-accent: #C76B4A;
+  --color-accent: #334195;
   --color-accent-hover: #A95438;
   --color-border: #E5DED5;
   ---background-color-transparent: rgba(160, 160, 160, 0.4);
@@ -609,7 +618,7 @@ h2{
   text-decoration: none;
   color: var(--color-accent);
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .work-project-title {
@@ -645,8 +654,8 @@ h2{
 }
 
 .work-project-description {
-  width: 100%;
-  font-family: var(--font-sans);
+  width: 105%;
+  font-family: var(--font-serif);
   text-align: justify;
   font-size: smaller;
   line-height: 1.45;
@@ -667,6 +676,7 @@ h2{
 .work-project-button {
   text-decoration: none;
   color: var(--color-accent);
+
 }
 
 .work-project-button:hover {
@@ -678,26 +688,25 @@ h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
+  gap: 3px;
   width: 100%;
   min-height: 30px;
 }
 
 .tech-button {
-  border-radius: 5px;
-  padding: 3px 5px;
-  font-size: xx-small;
-  background-color: var(--color-muted);
-  color: var(--color-foreground);
-  text-align: center;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 30px;
-  height: auto;
-  max-width: 100%;
+  border-radius: 999px;
   border: 1px solid var(--color-border);
-  overflow-wrap: anywhere;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text);
+  padding: 0.28rem 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  font-family: var(--font-sans);
+  white-space: nowrap;
 }
 
 .project-case-study {

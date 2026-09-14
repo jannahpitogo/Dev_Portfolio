@@ -141,10 +141,7 @@ export default function Work({ activeCategory }) {
               variants={projectVariants}
             >
               <div className="project">
-                <a href={demoLink} target="_blank" rel="noopener noreferrer">
                   <img src={image} alt={project.hero?.alt || title} className="project-img" />
-                </a>
-
                 <div className="project-content">
                   <h3 className="work-project-title">{title}</h3>
                   <p className="work-project-description">{description}</p>

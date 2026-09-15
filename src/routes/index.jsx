@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import AnnouncementModal from "../components/modal.jsx";
 import About from "../components/about.jsx";
 import Hero from "../components/hero.jsx";
 import Work from "../components/work.jsx";
@@ -42,7 +41,6 @@ export default function Home() {
 
   return (
     <main>
-      <AnnouncementModal />
       <Hero activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
       <Work activeCategory={activeCategory} />
       <Experiences activeCategory={activeCategory}></Experiences>

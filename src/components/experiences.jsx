@@ -37,7 +37,7 @@ const workExperienceCreative = [
         description: "Manage administrative operations including appointment scheduling platform, patient communication, follow-ups, and email coordination, while overseeing the clinic’s social media, Google Business Profile, digital content, online engagement, and website updates.",
         tools: ["Canva", "Adobe Photoshop", "Adobe Premiere Pro", "Meta Business Suite", "YouCanBook.Me", "Google Workspace"],
         year: "2025 - 2026",
-        image: "/images/premieredent.png",
+        image: "/images/premieredent_icon.png",
     },
     {
         title: "Graphics & Video Editor",

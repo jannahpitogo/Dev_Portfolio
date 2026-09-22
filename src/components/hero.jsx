@@ -68,7 +68,7 @@ export default function Hero({ setActiveCategory, activeCategory }) {
                 damping: 10,
               }}
             >
-              Multimedia Designer
+              Administrative & Multimedia Designer
             </motion.span>
           </h1>
           <p>

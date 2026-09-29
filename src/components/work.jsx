@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import devProjects from "../data/projects_tech.json";
 import creativeProjects from "../data/projects_creative.json";
+import { CreativeLongForm, CreativeShorts } from "./video.jsx";
 
 
 export default function Work({ activeCategory }) {
@@ -92,6 +93,8 @@ export default function Work({ activeCategory }) {
               );
             })}
           </motion.div>
+          <CreativeShorts />
+          <CreativeLongForm />
         </div>
       </section>
     );

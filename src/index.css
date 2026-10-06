@@ -87,6 +87,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -180,17 +181,22 @@ textarea {
 }
 
 .hero-title {
+  max-width: 100%;
   font-family: var(--font-sans);
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
   margin: 0;
   color: var(--color-text);
+  overflow-wrap: anywhere;
 }
 
 .hero-content {
   display: flex; 
   flex-direction: column;
   height: min-content;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   align-items: center;
   color: var(--color-text);
 }

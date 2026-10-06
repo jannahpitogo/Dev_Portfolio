@@ -182,12 +182,20 @@ textarea {
 
 .hero-title {
   max-width: 100%;
+  width: 100%;
+  text-align: center;
   font-family: var(--font-sans);
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
   margin: 0;
   color: var(--color-text);
   overflow-wrap: anywhere;
+}
+
+.hero-title--creative {
+  width: 100vw;
+  max-width: none;
+  overflow-wrap: normal;
 }
 
 .hero-content {
@@ -198,6 +206,7 @@ textarea {
   max-width: 100%;
   min-width: 0;
   align-items: center;
+  text-align: center;
   color: var(--color-text);
 }
 

@@ -56,10 +56,10 @@ export default function Hero({ setActiveCategory, activeCategory }) {
         </div>
       ) : (
         <div className="hero-content">
-          <h1 className="hero-title">
+          <h1 className="hero-title hero-title--creative">
             <motion.span
               key={activeCategory}
-              style={{ display: "inline-block", whiteSpace: "nowrap", fontSize: "clamp(3.25rem, 5vw, 5.5rem)", textAlign: "center" }}
+              style={{ display: "block", whiteSpace: "nowrap", fontSize: "clamp(1rem, 3.5vw, 3.5rem)" }}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{

@@ -110,7 +110,7 @@ export default function Work({ activeCategory }) {
           </Link>
         </div>
 
-        <p className="header-description">A selection of web projects showcasing my development skills, technical problem-solving, and experience building functional digital experiences.</p>
+        <p className="header-description">A selection of web projects & automation projects showcasing my development skills, technical problem-solving, and experience</p>
       </div>
 
       <motion.div

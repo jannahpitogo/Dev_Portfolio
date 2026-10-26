@@ -45,12 +45,14 @@ export default function Hero({ setActiveCategory, activeCategory }) {
                 damping: 10,
               }}
             >
-              Web Developer
+              Web Developer & Automation Specialist
             </motion.span>
           </h1>
           <p>
-            Hi, I'm Jannah! Full-Stack Web Developer with a creative side and a strong eye for UI,
-            blending technical skills with visual design to build functional and engaging digital experiences.
+            Hi, I'm Jannah! A Web Developer and Automation Specialist who 
+            loves combining creativity and technology to build solutions. 
+            I am passionate about making web applications, automating tasks, and 
+            learning new ways to make things work better.
           </p>
           <Tech></Tech>
         </div>

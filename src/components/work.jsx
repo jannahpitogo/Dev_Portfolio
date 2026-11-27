@@ -135,7 +135,7 @@ export default function Work({ activeCategory }) {
           const description = project.overview || project.description;
           const image = project.hero?.image || project.background;
           const tools = project.technologies || project.tools || [];
-          const demoLink = project.link || project.hero?.image || "#";
+          const projectUrl = project.link || "#";
 
           return (
             <motion.div
@@ -143,10 +143,19 @@ export default function Work({ activeCategory }) {
               key={project.slug || `${title}-${index}`}
               variants={projectVariants}
             >
-              <div className="project">
-                  <img src={image} alt={project.hero?.alt || title} className="project-img" />
+              <a
+                href={projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project"
+                aria-label={`Visit ${title}`}
+              >
+                <img src={image} alt={project.hero?.alt || title} className="project-img" />
                 <div className="project-content">
-                  <h3 className="work-project-title">{title}</h3>
+                  <div className="project-content__top">
+                    <h3 className="work-project-title">{title}</h3>
+                    {project.category ? <span className="work-project-meta">{project.category}</span> : null}
+                  </div>
                   <p className="work-project-description">{description}</p>
 
                   <div className="techstack-container">
@@ -156,18 +165,8 @@ export default function Work({ activeCategory }) {
                       </span>
                     ))}
                   </div>
-
-                  <div className="project-button-container">
-                    <a href={demoLink} target="_blank" rel="noopener noreferrer" className="work-project-button">
-                      Demo ↗
-                    </a>
-
-                    <Link to={`/${project.slug || "projects"}`} className="work-project-button">
-                      View More ↗
-                    </Link>
-                  </div>
                 </div>
-              </div>
+              </a>
             </motion.div>
           );
         })}

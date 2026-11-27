@@ -1,8 +1,8 @@
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
-import bgImage from "../assets/bg.webp";
 import "../index.css";
 import Footer from "../components/footer.jsx";
 import Nav from "../components/nav.jsx";
+import ThemeToggle from "../components/theme-toggle.jsx";
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -11,22 +11,16 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <div style={{
-      backgroundImage: `url(${bgImage})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
+      backgroundImage: "var(--bg-gradient)",
       backgroundAttachment: "fixed",
+      minHeight: "100vh",
       position: "relative",
     }}>
-      <div style={{
-        position: "absolute",
-        inset: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.2)",
-        pointerEvents: "none",
-      }}></div>
       <div style={{ position: "relative", zIndex: 1 }}>
         <Nav/>
         <Outlet />
         <Footer/>
+        <ThemeToggle />
       </div>
     </div>
   );

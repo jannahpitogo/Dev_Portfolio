@@ -1,6 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Link } from '@tanstack/react-router'
-import projectsTech from '../data/projects_tech.json'
 import projectsCreative from '../data/projects_creative.json'
 
 export const Route = createFileRoute('/$slug')({
@@ -9,7 +8,7 @@ export const Route = createFileRoute('/$slug')({
 
 function projectPage() {
   const { slug } = Route.useParams()
-  const project = projectsTech.find((item) => item.slug === slug) || projectsCreative.find((item) => item.slug === slug)
+  const project = projectsCreative.find((item) => item.slug === slug)
 
   if (!project) {
     return (
@@ -24,15 +23,12 @@ function projectPage() {
     )
   }
 
-  const projectCategory = project.category?.toLowerCase() === 'creative' ? 'creative' : 'dev'
-  const isCreativeProject = projectCategory === 'creative'
-
   return (
     <article className="project-case-study">
       <div className="project-case-study__wrap">
         <header className="project-case-study__header">
           <Link
-            to={`/?category=${projectCategory}`}
+            to="/?category=creative"
             hash="work"
             className="project-case-study__back"
           >
@@ -41,20 +37,6 @@ function projectPage() {
 
           <div className="project-case-study__meta">
             <span className="project-case-study__eyebrow">{project.category}</span>
-            {!isCreativeProject ? (
-              <div className="project-case-study__links">
-                {project.link ? (
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    Live Demo ↗
-                  </a>
-                ) : null}
-                {project.status === 'public' && project.source ? (
-                  <a href={project.source} target="_blank" rel="noreferrer">
-                    Source ↗
-                  </a>
-                ) : null}
-              </div>
-            ) : null}
           </div>
 
           <h1 className="project-case-study__title">{project.title}</h1>
@@ -66,54 +48,35 @@ function projectPage() {
             <img src={project.hero?.image} alt={project.hero?.alt || project.title} />
           </figure>
 
-          {(project.images?.length || project.gallery?.length) ? (
+          {(project.images?.length) ? (
             <div className="project-case-study__mini-gallery">
-              {(project.gallery && project.gallery.length ? project.gallery : project.images || []).slice(0, 5).map((image, index) => (
+              {project.images.slice(0, 5).map((image, index) => (
                 <figure key={`${image}-${index}`} className="project-case-study__mini-item">
                   <img src={image} alt={`${project.title} detail ${index + 1}`} />
                 </figure>
               ))}
             </div>
-
-            
-
-
-
-            
           ) : null}
         </div>
 
-        {!isCreativeProject ? (
-          <section className="project-case-study__section">
-            <div className="project-case-study__label">Technologies</div>
-            <div className="project-case-study__tags">
-              {project.technologies?.map((tech) => (
-                <span key={tech} className="project-case-study__tag">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </section>
-        ) : (
-          <section className="project-case-study__section">
-            <div className="project-case-study__label">TOOLS</div>
-            <div className="project-case-study__tags">
-              {project.tools?.map((tech) => (
-                <span key={tech} className="project-case-study__tag">
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <div className="project-case-study__label">TYPE</div>
-            <div className="project-case-study__tags">
-              {project.type?.map((tech) => (
-                <span key={tech} className="project-case-study__tag">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </section>
-        )}
+        <section className="project-case-study__section">
+          <div className="project-case-study__label">TOOLS</div>
+          <div className="project-case-study__tags">
+            {project.tools?.map((tech) => (
+              <span key={tech} className="project-case-study__tag">
+                {tech}
+              </span>
+            ))}
+          </div>
+          <div className="project-case-study__label">TYPE</div>
+          <div className="project-case-study__tags">
+            {project.type?.map((tech) => (
+              <span key={tech} className="project-case-study__tag">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </section>
 
         <div className="project-case-study__content">
           <section className="project-case-study__section">
@@ -141,23 +104,6 @@ function projectPage() {
             </ol>
           </section>
 
-          {!isCreativeProject ? (
-            <section className="project-case-study__section project-case-study__section--split">
-              <div>
-                <div className="project-case-study__label">Features</div>
-                <ul className="project-case-study__list project-case-study__list--bullets">
-                  {project.features?.map((feature) => (
-                    <li key={feature}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <div className="project-case-study__label">Challenges</div>
-                <p>{project.challenges}</p>
-              </div>
-            </section>
-          ) : null}
-
           <section className="project-case-study__section">
             <div className="project-case-study__label">Outcome</div>
             <p>{project.outcome}</p>
@@ -165,13 +111,12 @@ function projectPage() {
         </div>
 
         <Link
-            to={`/?category=${projectCategory}`}
-            hash="work"
-            className="project-case-study__back">
-            ← Back to Projects
-            </Link>
+          to="/?category=creative"
+          hash="work"
+          className="project-case-study__back">
+          ← Back to Projects
+        </Link>
       </div>
     </article>
   )
 }
-

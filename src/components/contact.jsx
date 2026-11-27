@@ -1,7 +1,33 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import githubIcon from "/images/github.png";
 
 export default function Contact() {
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+    setStatus("sending");
+    setErrorMsg("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(json.error || "Could not send your message.");
+      form.reset();
+      setStatus("success");
+    } catch (err) {
+      setErrorMsg(err.message);
+      setStatus("error");
+    }
+  }
+
   const itemVariants = {
     hidden: {
       opacity: 0,
@@ -104,6 +130,38 @@ export default function Contact() {
           </motion.a>
         </motion.div>
       </motion.div>
+      <motion.form
+        className="contact-form"
+        onSubmit={handleSubmit}
+        initial={{ opacity: 0, x: 40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <label className="label">
+          Name
+          <input className="label-input" type="text" name="name" placeholder="Your name" required maxLength={100} />
+        </label>
+        <label className="label">
+          Email
+          <input className="label-input" type="email" name="email" placeholder="you@example.com" required maxLength={200} />
+        </label>
+        <label className="label">
+          Subject
+          <input className="label-input" type="text" name="subject" placeholder="What's this about?" required maxLength={150} />
+        </label>
+        <label className="label">
+          Message
+          <textarea className="label-input contact-textarea" name="message" placeholder="How can I help?" required rows={5} maxLength={5000} />
+        </label>
+        <button className="contact-button" type="submit" disabled={status === "sending"}>
+          {status === "sending" ? "Sending..." : "Send Message"}
+        </button>
+        <p className="contact-status" role="status" aria-live="polite">
+          {status === "success" && "Thanks! Your message has been sent."}
+          {status === "error" && errorMsg}
+        </p>
+      </motion.form>
     </section>
   );
 }

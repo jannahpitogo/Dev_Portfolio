@@ -860,27 +860,6 @@ h2{
   color: var(--color-muted-foreground);
 }
 
-.project-button-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 16px;
-  margin-top: auto;
-  padding-top: 4px;
-  width: 100%;
-}
-
-.work-project-button {
-  text-decoration: none;
-  color: var(--color-accent);
-
-}
-
-.work-project-button:hover {
-  text-decoration: underline;
-  color: var(--color-text);
-}
-
 .techstack-container {
   display: flex;
   flex-wrap: wrap;
@@ -971,23 +950,6 @@ h2{
   line-height: 1.1;
   font-family: var(--font-sans);
   white-space: nowrap;
-}
-
-.project-case-study__links {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.project-case-study__links a {
-  text-decoration: none;
-  color: var(--color-text);
-  font-family: var(--font-sans);
-  font-weight: 600;
-}
-
-.project-case-study__links a:hover {
-  text-decoration: underline;
 }
 
 .project-case-study__title {
@@ -1226,11 +1188,6 @@ h2{
   .project-case-study__header {
     gap: 14px;
     margin-bottom: 22px;
-  }
-
-  .project-case-study__links {
-    flex-wrap: wrap;
-    gap: 8px 12px;
   }
 
   .project-case-study__title {
@@ -1773,11 +1730,6 @@ footer {
   .project-case-study__meta {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .project-case-study__links {
-    flex-wrap: wrap;
-    gap: 8px 12px;
   }
 
   .project-case-study__section--split {

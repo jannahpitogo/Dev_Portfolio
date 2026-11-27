@@ -6,7 +6,7 @@ const workExperienceTech = [
         title: "Full Stack Web Developer - Bootcamp",
         company: "Migracode Barcelona",
         description: "Completed a 9-month Web Development Bootcamp focused on full-stack development, programming fundamentals, APIs, databases, testing, Git/GitHub, and Agile collaboration. Built web applications through hands-on projects and team-based development.",
-        tools: ["HTML", "CSS", "JavaScript", "REST API", "DOM", "Version Control", "Git/GitHub", "API/Fetch", "Python", "React", "Node.js", "Express", "DevTools", "Testing"],
+        tools: ["HTML", "CSS", "JavaScript", "APIs", "DOM", "Git/GitHub", "Python", "ReactJS", "Node.js", "Express", "DevTools", "Testing"],
         year: "2025 - 2026",
         image: "/images/migracode.webp",
     },

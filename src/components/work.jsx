@@ -146,7 +146,10 @@ export default function Work({ activeCategory }) {
               <div className="project">
                   <img src={image} alt={project.hero?.alt || title} className="project-img" />
                 <div className="project-content">
-                  <h3 className="work-project-title">{title}</h3>
+                  <div className="project-content__top">
+                    <h3 className="work-project-title">{title}</h3>
+                    {project.category ? <span className="work-project-meta">{project.category}</span> : null}
+                  </div>
                   <p className="work-project-description">{description}</p>
 
                   <div className="techstack-container">

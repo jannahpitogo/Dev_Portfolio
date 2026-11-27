@@ -7,8 +7,6 @@ export const Route = createRootRoute({
   component: RootComponent,
 });
 
-// Gradient-only background: deep blue (bottom-left) -> teal -> black (bottom-right),
-// with a soft green glow in the top-right corner.
 const backgroundGradient = [
   "radial-gradient(ellipse 60% 55% at 92% 0%, rgba(110, 190, 120, 0.85) 0%, rgba(63, 138, 92, 0.45) 35%, transparent 70%)",
   "linear-gradient(135deg, #1c3f5c 0%, #22505a 28%, #2a5d5a 45%, #0f2a2a 68%, #030606 85%, #000000 100%)",

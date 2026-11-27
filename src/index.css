@@ -49,7 +49,7 @@
   --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
   --font-serif: "Lora", Georgia, serif;
   --font-mono: "Google Sans Flex", "JetBrains Mono", monospace;
-  --content-width: 1172px;
+  --content-width: 1098px;
   --content-gutter: 24px;
 
   /* Light theme */
@@ -732,10 +732,13 @@ h2{
 
 .project-img {
   display: block;
-  flex: 0 0 clamp(180px, 28%, 320px);
-  width: clamp(180px, 28%, 320px);
+  flex: 0 0 clamp(130px, 20%, 230px);
+  width: clamp(130px, 20%, 230px);
   height: auto;
-  aspect-ratio: 21 / 9;
+  width: 100%;
+  height: 0;
+  min-height: 100%;
+  align-self: stretch;
   object-fit: cover;
   border-radius: 12px;
   margin: 0;
@@ -743,7 +746,8 @@ h2{
 }
 
 .project {
-  display: flex;
+  display: grid;
+  grid-template-columns: clamp(130px, 20%, 230px) minmax(0, 1fr);
   color: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -751,9 +755,7 @@ h2{
   border-bottom: 1px solid var(--color-border);
   position: relative;
   padding: 16px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 20px;
   height: 100%;
   transition: background-color 0.3s ease;
@@ -793,7 +795,7 @@ h2{
 .work-project-meta {
   flex-shrink: 0;
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: var(--color-muted-foreground);
   white-space: nowrap;
 }
@@ -809,7 +811,7 @@ h2{
   width: 100%;
   font-weight: 700;
   font-family: var(--font-sans);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0;
   padding: 0 0 4px;
   overflow-wrap: anywhere;
@@ -853,7 +855,7 @@ h2{
   max-width: 62ch;
   font-family: var(--font-sans);
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   margin: 0 0 8px;
   overflow-wrap: anywhere;
@@ -1708,18 +1710,24 @@ footer {
 
   .project {
     width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
     padding: 12px 0;
   }
 
   .project-img {
     flex: none;
-    width: 100%;
+    width: 75%;
+    height: auto;
+    min-height: 0;
+    align-self: auto;
+    aspect-ratio: 21 / 9;
   }
 
   .work-project-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .project-case-study__wrap {

@@ -112,15 +112,15 @@ export function Experiences({activeCategory}) {
                     }}>
                         <img className="experience-image" src={exp.image} alt="" />
                         <div className="experience-content">
-                            <h3>{exp.title}</h3>
+                            <div className="experience-content__top">
+                                <h3>{exp.title}</h3>
+                                <span className="experience-year">{exp.year}</span>
+                            </div>
                             <p className="experience-company">{exp.company}</p>
                             <p className="experience-description">{exp.description}</p>
                             <div className="experience-tools">
                                 {exp.tools.map((tool) => <span key={tool}>{tool}</span>)}
                             </div>
-                        </div>
-                        <div className="experience-meta">
-                            <p>{exp.year}</p>
                         </div>
                     </motion.article>
                 ))}

@@ -1231,7 +1231,7 @@ h2{
   display: flex;
   text-align: center;
   padding: 100px 0;
-  gap: 100px;
+  gap: clamp(40px, 6vw, 96px);
 }
 
 .contact-header {
@@ -1256,6 +1256,7 @@ h2{
 
   .contact-form {
     width: 100%;
+    padding: 12px 6px;
   }
 }
 
@@ -1264,44 +1265,53 @@ h2{
 .label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-family: var(--font-serif);
-  font-size: 1rem;
+  gap: 5px;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-foreground);
 }
 
 .label-input {
   gap: 4px;
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  background-color: var(--color-card);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  color: var(--color-foreground);
-  height: 40px;
-  padding: 8px 10px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #d3dce8;
+  border-radius: 10px;
+  color: #0f1d4a;
+  height: 36px;
+  padding: 6px 12px;
   outline: none;
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
-    border-color 0.3s ease;
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .label-input:focus {
-  border-color: var(--color-accent);
+  border-color: #334195;
+  box-shadow: 0 0 0 3px rgba(51, 65, 149, 0.15);
 }
 
 .label-input::placeholder {
-  color: var(--color-muted-foreground);
+  color: #6b7488;
 }
 
 .contact-button {
-  background-color: var(--color-foreground);
-  color: var(--color-background);
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
+  width: 100%;
+  background-color: #ffffff;
+  color: var(--color-card);
+  border: 1px solid rgba(31, 42, 107, 0.1);
+  padding: 9px 20px;
+  border-radius: 12px;
   cursor: pointer;
   font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(20, 33, 61, 0.12);
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
@@ -1311,14 +1321,23 @@ h2{
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   text-align: left;
+  font-family: var(--font-sans);
+  padding: 24px 34px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 20px 50px rgba(20, 33, 61, 0.08);
 }
 
 .contact-textarea {
-  height: auto;
+  height: 96px;
+  min-height: 96px;
   resize: vertical;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
 
 .contact-button:disabled {
@@ -1327,8 +1346,8 @@ h2{
 }
 
 .contact-status {
-  min-height: 1.4em;
-  font-family: var(--font-serif);
+  min-height: 0.7em;
+  font-family: var(--font-sans);
   font-size: 0.95rem;
 }
 
